@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout
+        android:id="@+id/photoGrid_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/meibao_color_1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="相册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <ImageView 
+            android:id="@+id/photoGrid_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/building_back" />
+    </RelativeLayout> 
+	
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/photoGrid_title"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="2dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dip" >
+    </GridView>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/photo_g.xml -->

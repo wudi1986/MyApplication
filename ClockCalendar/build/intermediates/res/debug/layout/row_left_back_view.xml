@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="62dp" > -->
+
+
+        <!-- <View -->
+        <!-- android:layout_width="80dp" -->
+        <!-- android:layout_height="wrap_content" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/detail" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center_vertical" -->
+        <!-- android:gravity="center_vertical" -->
+        <!-- android:textSize="@dimen/font4" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:layout_marginRight="16dp" -->
+        <!-- android:text="打卡" /> -->
+        <!-- </LinearLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp" >
+
+            <View
+                android:id="@+id/leftBG"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@color/meibao_color_9" />
+			
+            <ImageView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/shenlv" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottomView"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/layout"
+            android:background="@color/meibao_color_13"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_above="@id/bottomView"
+            android:layout_alignRight="@id/layout"
+            android:background="@color/meibao_color_12"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/row_left_back_view.xml -->

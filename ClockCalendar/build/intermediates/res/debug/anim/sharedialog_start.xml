@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:ordering="sequentially">
+
+    <set >
+
+         <scale 
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="1.0"
+        android:fromYScale="0.0"
+        android:toYScale="1.0"
+        android:pivotX="0%"
+        android:pivotY="100%"
+        android:fillAfter="false"
+        android:duration="400"/>
+        <translate
+            android:duration="300"
+            android:fromXDelta="0"
+            android:fromYDelta="1000"
+            android:toXDelta="0"
+        	android:fillAfter="false"
+            android:toYDelta="0" />
+
+        <rotate
+            android:duration="300"
+            android:fromDegrees="20"
+            android:pivotX="0%"
+            android:pivotY="50%"
+        	android:fillAfter="false"
+            android:toDegrees="-5" />
+
+        <scale
+            android:duration="300"
+            android:fillAfter="false"
+            android:fromXScale="0.8"
+            android:fromYScale="0.8"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toXScale="1.0"
+            android:toYScale="1.0" />
+    </set>
+      <rotate
+            android:duration="200"
+            android:fromDegrees="0"
+            android:pivotX="0%"
+        	android:fillAfter="false"
+            android:pivotY="50%"
+            android:startOffset="300"
+            android:toDegrees="7" />
+      
+      <rotate
+            android:duration="100"
+            android:fromDegrees="0"
+            android:pivotX="0%"
+            android:startOffset="500"
+        	android:fillAfter="false"
+            android:pivotY="50%"
+            android:toDegrees="-2" />
+
+</set><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/anim/sharedialog_start.xml -->

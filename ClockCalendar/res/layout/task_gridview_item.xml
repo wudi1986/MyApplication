@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yktx.check.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <TextView 
+         android:id="@+id/taskBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/font6"
+        android:textColor="@color/meibao_color_11"
+        android:background="@color/meibao_color_13"
+        />
+    
+    <ImageView
+        android:id="@+id/taskLastPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/taskMorePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xq_duotu"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/taskImageKuang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/xq_rl_youtu"
+        android:visibility="gone" />
+    
+
+</com.yktx.check.widget.SquareLayout>

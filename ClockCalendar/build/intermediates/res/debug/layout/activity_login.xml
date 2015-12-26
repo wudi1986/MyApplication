@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/login_Image"
+        android:layout_width="150dp"
+        android:layout_height="228dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/denglu_picture" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="341dp" >
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/weixinLogin" -->
+<!--             android:layout_width="56dp" -->
+<!--             android:layout_height="78dp" -->
+<!--             android:layout_marginLeft="54dp" -->
+<!--             android:orientation="horizontal" -->
+<!--             android:visibility="gone"  > -->
+
+            <ImageView
+            android:id="@+id/weixinLogin"
+            android:layout_width="56dp"
+            android:layout_height="78dp"
+            android:layout_toLeftOf="@+id/sinaLogin"
+            android:layout_marginRight="42dp"
+            android:src="@drawable/denglu_weixin"
+            android:layout_centerVertical="true"
+                android:visibility="invisible"/>
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="微信登录" -->
+<!--                 android:textColor="@color/white" -->
+<!--                 android:textSize="@dimen/font3" -->
+<!--                 android:visibility="gone" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/sinaLogin" -->
+<!--             android:layout_width="56dp" -->
+<!--             android:layout_height="78dp" -->
+<!--             android:orientation="horizontal" -->
+<!--             android:layout_marginLeft="42dp"  > -->
+
+            <ImageView
+            android:id="@+id/sinaLogin"
+            android:layout_width="56dp"
+            android:layout_height="78dp"
+            android:layout_centerInParent="true"
+                android:src="@drawable/denglu_weibo"
+                android:visibility="invisible"
+                 />
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="微博登录" -->
+<!--                 android:textColor="@color/white" -->
+<!--                 android:textSize="@dimen/font3" -->
+<!--                 android:visibility="gone" /> -->
+<!--         </LinearLayout> -->
+<!--         <LinearLayout -->
+<!--             android:id="@+id/QQLogin" -->
+<!--              android:layout_width="56dp" -->
+<!--             android:layout_height="78dp" -->
+<!--             android:orientation="horizontal" -->
+<!--              android:layout_marginLeft="42dp" -->
+<!--                 android:visibility="gone"  > -->
+
+            <ImageView
+            android:id="@+id/QQLogin"
+             android:layout_width="56dp"
+            android:layout_height="78dp"
+            android:layout_toRightOf="@id/sinaLogin"
+             android:layout_marginLeft="42dp"
+            android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:src="@drawable/denglu_qq" />
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="微信登录" -->
+<!--                 android:textColor="@color/white" -->
+<!--                 android:textSize="@dimen/font3"  -->
+<!--                 android:visibility="gone"/> -->
+<!--         </LinearLayout> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/login_allBottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录即表示同意使用协议"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/login_userTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用条款"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+
+            <TextView
+                android:id="@+id/login_privacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐私策略"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/activity_login.xml -->

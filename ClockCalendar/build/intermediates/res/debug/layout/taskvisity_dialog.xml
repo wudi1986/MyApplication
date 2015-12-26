@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/giveupjob_dialog_shape"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="隐私设置"
+            android:textColor="@color/meibao_color_7"
+            android:textSize="@dimen/font3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="设置为隐私后，所有打卡信息仅能被自己看到"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal"
+            android:paddingBottom="18dp" >
+
+            <TextView
+                android:id="@+id/taskvisity_dialog_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/giveup_dialog_result_shape"
+                android:gravity="center"
+                android:text="设为隐私"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/taskvisity_dialog_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/giveup_dialog_cancel_shape"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/meibao_color_7" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/taskvisity_dialog.xml -->

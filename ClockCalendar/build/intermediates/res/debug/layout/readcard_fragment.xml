@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/readcard_fragment_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/meibao_color_15"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:id="@+id/readcard_fragment_item_TopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="15dp" 
+            android:layout_marginRight="1dp" >
+
+            <TextView
+                android:id="@+id/readcard_fragment_item_PageNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="今日最新："
+                android:textColor="@color/meibao_color_14"
+                android:textSize="@dimen/font5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/readcard_fragment_item_typeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/meibao_color_1"
+                    android:textSize="@dimen/font5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@color/meibao_color_14" />
+
+                <TextView
+                    android:id="@+id/readcard_fragment_item_typeHaveImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="有图"
+                    android:textColor="@color/meibao_color_14"
+                    android:textSize="@dimen/font5" />
+            </LinearLayout>
+        </RelativeLayout>
+
+<!--         <com.chiemy.cardview.view.CardView -->
+<!--             android:id="@+id/contentLayout" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/readcard_fragment_item_TopLayout" -->
+<!--             android:layout_marginRight="0.5dp" -->
+<!--             android:orientation="vertical" > -->
+<!--         </com.chiemy.cardview.view.CardView> -->
+    <com.chiemy.cardview.view.CardView
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="15dp" 
+        android:layout_below="@+id/readcard_fragment_item_TopLayout"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contentLayout"
+            android:layout_marginTop="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="15dp" 
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_daqiTopImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/guangchang_yk_dqtx"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_daqiImage"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/daqi_select" />
+            </LinearLayout>
+			
+            <ImageView
+                android:id="@+id/readcard_fragment_item_nextJobImage"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/nextjob_select" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view_anim"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/building_dialog_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/black90" >
+
+            <ImageView
+                android:id="@+id/building_dialog_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/guangchang_bd_daqichenggong" />
+
+            <TextView
+                android:id="@+id/building_dialog_Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/building_dialog_image"
+                android:gravity="center"
+                android:text="添加成功!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/building_dialog_voteContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:text="你将得到气球 +1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/readcard_fragment.xml -->

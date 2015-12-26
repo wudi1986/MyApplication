@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/attention_frament_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/meibao_color_15" >
+
+        <!-- <com.yktx.check.listview.XListView -->
+        <!-- android:id="@+id/infoListView" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="#00000000" -->
+        <!-- android:divider="@null" -->
+        <!-- android:scrollbars="none" -->
+        <!-- app:isMyProgressBar="false" /> -->
+        <ProgressBar
+            android:id="@+id/attention_frament_ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:indeterminateDrawable="@anim/xlistview_header_progress_bar"
+            android:visibility="visible"
+            android:layout_marginTop="4dp" />
+
+        <com.yktx.check.listview.PinnedHeaderExpandableListView
+            android:id="@+id/expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/touming"
+            android:cacheColorHint="@color/white"
+            android:childIndicatorLeft="0dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:scrollbarAlwaysDrawHorizontalTrack="false" >
+        </com.yktx.check.listview.PinnedHeaderExpandableListView>
+
+        <com.yktx.check.listview.XListView
+            android:id="@+id/xListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/touming"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone"
+            app:isMyProgressBar="true" />
+        <RelativeLayout
+            android:id="@+id/building_dialog_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/black90" >
+
+                <ImageView
+                    android:id="@+id/building_dialog_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/guangchang_bd_daqichenggong" />
+
+                <TextView
+                    android:id="@+id/building_dialog_Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/building_dialog_image"
+                    android:gravity="center"
+                    android:text="添加成功!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/building_dialog_voteContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="你将得到气球 +1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font5"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view_anim"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/meibao_color_12"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/attention_fragment.xml -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/toumingimg">
+
+    <RelativeLayout
+        android:id="@+id/addComment_dialog_inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" 
+        android:background="@drawable/toumingimg">
+
+        <EditText
+            android:id="@+id/addComment_dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/addComment_dialog_confirm"
+            android:hint="来吧，说点什么吧！"
+            android:textColor="@color/meibao_color_11"
+            android:textColorHint="@color/meibao_color_11"
+            android:textSize="@dimen/font3" />
+
+        <TextView
+            android:id="@+id/addComment_dialog_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/clock_new_image1"
+            android:padding="8dp"
+            android:text="确定" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/addComment_dialog_OutSide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addComment_dialog_inputLayout"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/addcomment_dialog.xml -->

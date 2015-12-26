@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meibao_color_15" >
+    <RelativeLayout
+        android:id="@+id/groupSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" 
+        android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/groupSearchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/guangchang_guanzhu_search" />
+
+        <TextView
+            android:id="@+id/groupSearchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/groupSearchImage"
+            android:text="搜索"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/groupSearchName"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:layout_below="@id/groupSearchLayout" >
+
+        <TextView
+            android:id="@+id/attentionrecommendfragmentlistview_item_TopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="21dp"
+            android:text="推荐关注"
+            android:textColor="@color/meibao_color_14"
+            android:textSize="@dimen/font5"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attentionrecommendfragmentlistview_item_TopTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_shade"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <RelativeLayout
+                android:id="@+id/attentionrecommendfragmentlistview_item_topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="12dp" >
+
+                <LinearLayout
+                    android:id="@+id/attentionrecommendfragmentlistview_item_fanstypeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/attentionrecommendfragmentlistview_item_fanstypeImage"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/geren_guanzhu_yiguan" />
+
+                    <TextView
+                        android:id="@+id/attentionrecommendfragmentlistview_item_fanstypeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="关注"
+                        android:textColor="@color/meibao_color_11"
+                        android:textSize="@dimen/font4" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/attentionrecommendfragmentlistview_item_headLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/attentionrecommendfragmentlistview_item_fanstypeLayout"
+                    android:paddingRight="8dp" >
+
+                    <ImageView
+                        android:id="@+id/attentionrecommendfragmentlistview_item_headImage"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/head_null" />
+
+                    <TextView
+                        android:id="@+id/attentionrecommendfragmentlistview_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/attentionrecommendfragmentlistview_item_headImage"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/meibao_color_9"
+                        android:textSize="@dimen/font4" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/attentionrecommendfragmentlistview_item_taskLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <ImageView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskXZImage1"
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/xz0" />
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/attentionrecommendfragmentlistview_item_taskXZImage1"
+                    android:text="as"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font4" />
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskTotalDateCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="坚持"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/attentionrecommendfragmentlistview_item_taskLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <ImageView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskXZImage2"
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/xz0" />
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/attentionrecommendfragmentlistview_item_taskXZImage2"
+                    android:text="as"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font4" />
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskTotalDateCount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="坚持"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_line" 
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/attentionrecommendfragmentlistview_item_taskLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <ImageView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskXZImage3"
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/xz0" />
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/attentionrecommendfragmentlistview_item_taskXZImage3"
+                    android:text="as"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font4" />
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_taskTotalDateCount3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="坚持"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp" >
+
+                <TextView
+                    android:id="@+id/attentionrecommendfragmentlistview_item_botttomText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="正在坚持10张卡"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/attentionrecommendfragmentlistview_item.xml -->

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp" >
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="放弃"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@color/meibao_color_4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/toUp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="分享 "
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:background="@color/meibao_color_4"
+                android:textSize="@dimen/font5" 
+                android:visibility="gone"/>
+			
+            <TextView
+                android:id="@+id/tastInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="详情"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white" 
+                android:background="@color/meibao_color_3"
+                android:textSize="@dimen/font4" />
+        </LinearLayout>
+		
+        <View
+            android:id="@+id/bottomView"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/layout"
+            android:background="@color/meibao_color_13" 
+            android:visibility="gone"/>
+		
+<!--         <View -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="1dp" -->
+<!--             android:layout_above="@id/bottomView" -->
+<!--             android:layout_alignRight="@id/layout" -->
+<!--             android:background="@color/meibao_color_12" /> -->
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/row_right_back_view.xml -->

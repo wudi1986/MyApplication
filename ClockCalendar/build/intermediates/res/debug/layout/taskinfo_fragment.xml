@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expandablelist_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/task_info_titleLayout" >
+
+    <!-- <com.yktx.check.listview.XListView -->
+    <!-- android:id="@+id/infoListView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="#00000000" -->
+    <!-- android:divider="@null" -->
+    <!-- android:scrollbars="none" -->
+    <!-- app:isMyProgressBar="false" /> -->
+
+    <com.yktx.check.listview.PinnedHeaderExpandableListView
+        android:id="@+id/expandablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/touming"
+        android:cacheColorHint="@color/white"
+        android:childIndicatorLeft="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="false" >
+    </com.yktx.check.listview.PinnedHeaderExpandableListView>
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/loading_view_anim" />
+    <RelativeLayout
+        android:id="@+id/clock_main_alertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black90"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/leftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home_dakashibai" />
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="12dp" -->
+        <!-- android:layout_toRightOf="@id/leftImage" -->
+        <!-- android:orientation="vertical" > -->
+
+        <TextView
+            android:id="@+id/shareTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/leftImage"
+            android:text="打卡成功! "
+            android:textColor="@color/white"
+            android:textSize="@dimen/font2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clock_main_alertText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:text="第10天"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font5" />
+        <!-- </LinearLayout> -->
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/taskinfo_fragment.xml -->

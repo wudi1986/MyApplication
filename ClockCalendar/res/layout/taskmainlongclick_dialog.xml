@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:paddingBottom="28dp">
+
+    <LinearLayout
+        android:id="@+id/taskmainlongclick_dialog_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/giveupjob_dialog_shape"
+        android:orientation="horizontal"
+        android:paddingBottom="28dp"
+        android:paddingTop="28dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+            <ImageView
+                android:id="@+id/taskmainlongclick_dialog_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_mc_xq"
+                android:layout_marginLeft="46dp" />
+
+
+            <ImageView
+                android:id="@+id/taskmainlongclick_dialog_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_mc_setting"
+                android:layout_marginLeft="46dp" />
+
+            <ImageView
+                android:id="@+id/taskmainlongclick_dialog_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_mc_delete" 
+                android:layout_marginLeft="46dp"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/taskmainlongclick_dialog_blank"
+        android:layout_above="@+id/taskmainlongclick_dialog_Layout"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+</RelativeLayout>

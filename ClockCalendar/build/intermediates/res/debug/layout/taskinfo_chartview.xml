@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/task_descriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/task_info_topview_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/taskNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/building_levelall_shape" >
+
+            <ImageView
+                android:id="@+id/task_item_clocktopImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/guangchang_bd_duihao" />
+
+            <TextView
+                android:id="@+id/task_item_clockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/task_item_clocktopImage"
+                android:text="打卡上点击拉萨的加拉斯柯"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:id="@+id/task_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/task_item_clockName"
+                android:layout_below="@+id/task_item_clockName"
+                android:layout_marginTop="4dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/task_item_isVisityImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/xq_yinsi" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/taskCenterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/meibao_color_15"
+            android:paddingBottom="18dp"
+            android:paddingTop="13dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/task_item_TotalDateCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="2dp"
+                    android:text="12"
+                    android:textColor="@color/meibao_color_14"
+                    android:textSize="@dimen/font1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:text="坚持打卡天数"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/task_item_TotalcheckCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:paddingTop="2dp"
+                    android:text="12"
+                    android:textColor="@color/meibao_color_14"
+                    android:textSize="@dimen/font1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计打卡次数"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/task_item_medalImage"
+                    android:layout_width="39dp"
+                    android:layout_height="36dp"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/xz1" />
+
+                <TextView
+                    android:id="@+id/task_item_qiqiuNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="13dp"
+                    android:text="获得气球数量"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/taskLastTwoTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <ImageView
+                android:id="@+id/taskUserNameImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/xq_people" />
+
+            <TextView
+                android:id="@+id/taskUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/taskUserNameImage"
+                android:gravity="center"
+                android:maxWidth="148dp"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_14"
+                android:textSize="@dimen/font5" />
+
+            <ImageView
+                android:id="@+id/imageJian"
+                android:layout_width="8dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/xq_jiantou2" />
+
+            <TextView
+                android:id="@+id/infoLookMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/imageJian"
+                android:text="获得气球数量"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/meibao_color_12"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/taskCalendarText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/taskCalendar"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="日历"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/taskCountButton"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="计次"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/taskTimeButton"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="限时"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font4" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/infoShare"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taskinfo_share"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/showView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/yinying"
+        android:visibility="gone" />
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/taskLastTwoTitleLayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="48dp" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:gravity="center_vertical" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/taskBuildingTitleText" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:text="同时坚持的小7们" -->
+    <!-- android:textColor="@color/meibao_color_1" -->
+    <!-- android:textSize="@dimen/font2" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="36dp" -->
+    <!-- android:layout_height="28dp" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_toRightOf="@+id/taskBuildingTitleText" -->
+    <!-- android:src="@drawable/xq_xiaoren" /> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/infoLookMoreLayout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/infoLookMore" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_toLeftOf="@+id/infoLookMore_image" -->
+    <!-- android:gravity="right" -->
+    <!-- android:padding="2dp" -->
+    <!-- android:text="查看更多235人次" -->
+    <!-- android:textColor="@color/meibao_color_11" -->
+    <!-- android:textSize="@dimen/font4" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/infoLookMore_image" -->
+    <!-- android:layout_width="25dp" -->
+    <!-- android:layout_height="48dp" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:src="@drawable/taskinfo_more" -->
+    <!-- android:textColor="@color/black" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/taskLastTwoLayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0.5dp" -->
+    <!-- android:background="@color/color_line" -->
+    <!-- android:visibility="gone" /> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/taskBuildingLayout1" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_marginRight="16dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/taskUserName" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="小熊猫" -->
+    <!-- android:textColor="@color/meibao_color_9" -->
+    <!-- android:textSize="@dimen/font4" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/infoCount" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="105>" -->
+    <!-- android:textColor="@color/meibao_color_11" -->
+    <!-- android:textSize="@dimen/font5" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/infoComment" -->
+    <!-- android:layout_width="150dp" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_toRightOf="@+id/infoHaveImage" -->
+    <!-- android:ellipsize="end" -->
+    <!-- android:paddingLeft="4dp" -->
+    <!-- android:paddingTop="2dp" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:text="今天状态超级好" -->
+    <!-- android:textColor="@color/meibao_color_14" -->
+    <!-- android:textSize="@dimen/font4" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/infoHaveImage" -->
+    <!-- android:layout_width="18dp" -->
+    <!-- android:layout_height="14dp" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_toRightOf="@+id/taskUserName" -->
+    <!-- android:src="@drawable/taskinfo_haveimage" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/taskBuildingLayout2" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_marginRight="16dp" > -->
+
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0.5dp" -->
+    <!-- android:background="@color/color_line" -->
+    <!-- android:visibility="gone" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/taskUserName2" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="小熊猫" -->
+    <!-- android:textColor="@color/meibao_color_9" -->
+    <!-- android:textSize="@dimen/font4" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/infoCount2" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="105>" -->
+    <!-- android:textColor="@color/meibao_color_11" -->
+    <!-- android:textSize="@dimen/font5" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/infoComment2" -->
+    <!-- android:layout_width="150dp" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_toRightOf="@+id/infoHaveImage2" -->
+    <!-- android:ellipsize="end" -->
+    <!-- android:paddingLeft="4dp" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:text="今天状态超级好" -->
+    <!-- android:textColor="@color/meibao_color_14" -->
+    <!-- android:textSize="@dimen/font4" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/infoHaveImage2" -->
+    <!-- android:layout_width="18dp" -->
+    <!-- android:layout_height="14dp" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_toRightOf="@+id/taskUserName2" -->
+    <!-- android:src="@drawable/taskinfo_haveimage" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/taskBuildingMoreLayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="48dp" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0.5dp" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_marginRight="16dp" -->
+    <!-- android:background="@color/color_line" -->
+    <!-- android:visibility="gone" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0.5dp" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_marginRight="16dp" -->
+    <!-- android:background="@color/color_line" /> -->
+    <!-- </LinearLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/taskinfoBottomListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="我的坚持"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_line" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/taskinfo_chartview.xml -->

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/meibao_color_1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsice" />
+
+           <ImageView 
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/building_back" /> 
+            
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textsice"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout> 
+    
+    <GridView
+        android:layout_below="@id/title"
+        android:id="@+id/child_grid"
+        android:padding="2dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dip"
+        android:gravity="right"
+        android:verticalSpacing="2dip"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>

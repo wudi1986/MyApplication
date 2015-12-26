@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popWinLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toumingimg"
+    android:orientation="vertical"
+    android:paddingRight="8dp" >
+
+    <TextView
+        android:id="@+id/popwindow_layout_out"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:background="@color/black84"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="104dp"
+        android:layout_height="1dp"
+        android:background="#4A4D4A"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/popwindow_layout_sound"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:background="@color/black84"
+        android:gravity="center"
+        android:text="打卡声音：开"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="104dp"
+        android:layout_height="1dp"
+        android:background="#4A4D4A"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/popwindow_layout_Copyright"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:background="@color/black84"
+        android:gravity="center"
+        android:text="版权说明"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="104dp"
+        android:layout_height="1dp"
+        android:background="#4A4D4A"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/popwindow_layout_fk"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:background="@color/black84"
+        android:gravity="center"
+        android:text="意见反馈"
+        android:textColor="@color/white" />
+
+</LinearLayout>

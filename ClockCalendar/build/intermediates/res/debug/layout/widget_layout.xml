@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0ffffff" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffffff" >
+
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp" >
+ 			<ImageView
+                android:id="@+id/userHead"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/zm_touxiangbg" />
+        </RelativeLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <!-- <textView -->
+            <!-- id -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="打卡7" -->
+            <!-- android:textColor="@color/meibao_color_9" -->
+            <!-- android:textSize="20sp"/> -->
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="打卡7"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zm_jifen" />
+
+                <TextView
+                    android:id="@+id/qiqiuNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="打卡7"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_below="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:background="@color/meibao_color_9"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:divider="@null"
+        android:gravity="center"
+        android:loopViews="true" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/meibao_color_14_light"
+        android:gravity="center"
+        android:text="正在加载..."
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+		/>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/widget_layout.xml -->

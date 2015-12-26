@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meibao_color_15"
+    tools:context=".ClockSearchActivity" >
+
+    <RelativeLayout
+        android:id="@+id/title_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/meibao_color_2_80"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title_item_leftText"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/meibao_color_2_80"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/meibao_color_10"
+            android:textSize="@dimen/font5" />
+
+        <RelativeLayout
+            android:id="@+id/groupSearchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@id/title_item_leftText"
+            android:background="@drawable/clock_search_input_shape"
+            android:visibility="visible"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:id="@+id/groupSearchImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/xx_search2" />
+
+            <EditText
+                android:id="@+id/groupSearchInput"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/groupSearchImage"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="搜索"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_9"
+                android:textColorHint="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/groupSearchListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_item_layout"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_item_layout" >
+
+        <include
+            layout="@layout/loading_view_anim"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

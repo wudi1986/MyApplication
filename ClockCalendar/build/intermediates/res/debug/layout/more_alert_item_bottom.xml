@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/meibao_color_13" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可添加多个提醒"
+        android:textColor="@color/meibao_color_11"
+        android:textSize="@dimen/font4"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        />
+    
+
+</LinearLayout>
+<!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/more_alert_item_bottom.xml -->

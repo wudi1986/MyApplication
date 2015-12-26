@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="272dp"
+        android:layout_height="319dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" >
+
+        <ImageView
+            android:id="@+id/bgLight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dh_kuang" />
+
+        <ImageView
+            android:id="@+id/takecolck_successdialog_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/daka_3fen" />
+
+        <RelativeLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takecolck_successdialog_Image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/taskImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dh_gou" />
+
+            <TextView
+                android:id="@+id/taskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/taskImage"
+                android:text="今日获得气球"
+                android:textColor="#644322"
+                android:textSize="@dimen/font3" />
+
+            <!--
+            <TextView
+                android:id="@+id/qiqiuNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-2dp"
+                android:layout_toRightOf="@id/name1"
+                android:includeFontPadding="false"
+                android:text="20"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font2" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/qiqiuNum"
+                android:text="当前排名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5" />
+
+            <TextView
+                android:id="@+id/rankingNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-2dp"
+                android:layout_toRightOf="@id/name2"
+                android:includeFontPadding="false"
+                android:text="48"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font2" />-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dh_yijianchi" />
+
+            <TextView
+                android:id="@+id/checkDateCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="56"
+                android:textColor="#644322"
+                android:textSize="@dimen/font75s" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dh_tian" />
+        </LinearLayout>
+
+        <!--
+             <ImageView
+            android:id="@+id/takecolck_successdialog_topImage"
+            android:layout_width="212dp"
+            android:layout_height="116dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/daka_kuang" />-->
+
+
+        <!--
+             <ImageView
+            android:id="@+id/daka_qiqiu1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/dh_dkcg_left" />-->
+
+
+        <!--
+             <ImageView
+            android:id="@+id/daka_qiqiu2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/dh_dkcg_right" />-->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/closeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="167dp"
+        android:src="@drawable/dh_close" />
+
+    <TextView
+        android:id="@+id/sharedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="56dp"
+        android:text="把成就分享到："
+        android:textColor="@color/white"
+        android:textSize="@dimen/font4" />
+
+    <LinearLayout
+        android:id="@+id/shareButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharedTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" >
+
+        <ImageView
+            android:id="@+id/sinaShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/dh_sina" />
+
+        <ImageView
+            android:id="@+id/daka_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/dh_circle" />
+
+        <ImageView
+            android:id="@+id/daka_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/dh_qq" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dakaSum"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp" >
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="积分说明"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font4" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@id/jifen"
+                android:layout_alignRight="@id/jifen"
+                android:layout_below="@id/jifen"
+                android:src="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/finishLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="今日已有"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5" />
+
+            <TextView
+                android:id="@+id/userNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="人完成此卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/home_jiantou" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/takeclock_successdialog2.xml -->

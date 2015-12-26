@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <RelativeLayout
+            android:id="@+id/recommendfragment_listview_newitem_userLayout"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/recommendfragment_listview_newitem_headImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/guangchang_gc_touxiang2"
+                android:padding="0.5dp"
+                android:src="@drawable/zw_touxiang" />
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_newitem_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/recommendfragment_listview_newitem_headImage"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/recommendfragment_listview_newitem_userLayout" >
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_newitem_LeftTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="# "
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_newitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/recommendfragment_listview_newitem_LeftTitle"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxWidth="124dp"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_newitem_RightTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/recommendfragment_listview_newitem_title"
+                android:text=" #"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/recommendfragment_listview_newitem.xml -->

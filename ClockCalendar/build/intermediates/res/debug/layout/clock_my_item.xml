@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/clock_my_item_leftFristImage" -->
+    <!-- android:layout_width="6dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="@drawable/clock_my_left" -->
+    <!-- android:maxHeight="90dp" /> -->
+
+    <LinearLayout
+        android:id="@+id/clock_my_item_TopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingBottom="8dp" >
+
+        <ImageView
+            android:id="@+id/clock_my_item_Image"
+            android:layout_width="22dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/clock_my_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12.5dp"
+            android:layout_toRightOf="@id/clock_my_item_Image"
+            android:text="每天早上喝白开水"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font4" />
+
+        <TextView
+            android:id="@+id/clock_my_item_todayClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clock_my_item_name"
+            android:layout_marginTop="4dp"
+            android:text="今日已有15人打卡"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/clock_my_item_playDayNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:text="累计打卡13天"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font5"
+            android:visibility="gone" />
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/clock_my_item_RightLayout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:gravity="right" -->
+<!--             android:orientation="vertical" -->
+<!--             android:paddingTop="5dp" -->
+<!--             android:visibility="visible" > -->
+
+            <ImageView
+                android:id="@+id/clock_my_item_pointImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/geren_task_jc_jifen" />
+
+            <TextView
+                android:id="@+id/clock_my_item_pointNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/clock_my_item_pointImage"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font5"
+                android:visibility="visible" />
+<!--         </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignLeft="@id/clock_my_item_name"
+            android:layout_below="@id/clock_my_item_name"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1_light" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/clock_my_item_progress7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1_light" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clock_my_item_justNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="上次打卡  5小时前"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/clock_my_item_grade"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/clock_my_item_justNow"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/grade1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font4"
+            android:visibility="gone" />
+
+        <!-- <View -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="1dp" -->
+        <!-- android:layout_below="@+id/clock_my_item_todayClock" -->
+        <!-- android:layout_marginTop="12dp" -->
+        <!-- android:background="@color/meibao_color_12" /> -->
+
+        <TextView
+            android:id="@+id/clock_my_item_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="8dp"
+            android:text="天"
+            android:textColor="@color/meibao_color_1"
+            android:textSize="@dimen/font4"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/clock_my_item_TotalCheckCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/clock_my_item_day"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="-2dp"
+            android:layout_toLeftOf="@id/clock_my_item_day"
+            android:text="12"
+            android:textColor="@color/meibao_color_1"
+            android:textSize="@dimen/font2"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/clock_my_item_Yinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/clock_my_item_name"
+            android:src="@drawable/geren_yinsi2" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_line"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/clock_my_item.xml -->

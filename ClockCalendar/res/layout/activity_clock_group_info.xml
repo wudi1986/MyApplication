@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ClockGroupInfoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/group_info_titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" 
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/title_item_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:id="@+id/title_item_textLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:id="@+id/title_item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font11s"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_item_rightLayout"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/title_item_rightImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/guangchang_bd_paihangbang" />
+
+            <TextView
+                android:id="@+id/title_item_rightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/title_item_rightImage"
+                android:text="1"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font3"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/meibao_color_12"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_info_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/group_info_titlelayout"
+        android:paddingTop="12dp" >
+
+        <include
+            android:id="@+id/group_info_first_itemLayout"
+            layout="@layout/group_info_first_item"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/group_info_first_itemLayout" >
+
+            <ProgressBar
+                android:id="@+id/group_info_ProgressBar"
+                android:layout_marginTop="4dp" 
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:indeterminateDrawable="@anim/xlistview_header_progress_bar"
+                android:visibility="gone" />
+
+            <com.yktx.check.listview.XListView
+                android:id="@+id/group_info_XListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touming"
+                android:divider="@null"
+                android:scrollbars="none"
+                app:isMyProgressBar="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/building_dialog_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_above="@+id/building_dialog_clickClock"
+                android:background="@color/black90" >
+
+                <ImageView
+                    android:id="@+id/building_dialog_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/guangchang_bd_daqichenggong" />
+
+                <TextView
+                    android:id="@+id/building_dialog_Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/building_dialog_image"
+                    android:gravity="center"
+                    android:text="添加成功!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/building_dialog_voteContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="你将得到气球 +1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font5"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/building_dialog_takeClock"
+                    android:layout_width="60dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/guangchang_xiangqing_daka" />
+
+                <ImageView
+                    android:id="@+id/building_dialog_inviteClock"
+                    android:layout_width="60dp"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/building_dialog_takeClock"
+                    android:src="@drawable/guangchang_xiangqing_yaoqing"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view_anim"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageListNull"
+            android:layout_width="172dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhanwei_wuneirong"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meibao_color_15" >
+
+    <RelativeLayout
+        android:id="@+id/DynamicFragment_listview_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/DynamicFragment_listview_item_TopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <ImageView
+                android:id="@+id/DynamicFragment_listview_item_headImage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/qiqiuBg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/meibao_color_15"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/DynamicFragment_listview_item_addNumImage"
+                    android:layout_width="13dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/xx_1fen" />
+
+                <TextView
+                    android:id="@+id/DynamicFragment_listview_item_addNumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/meibao_color_1"
+                    android:textSize="@dimen/font4" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/DynamicFragment_listview_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/qiqiuBg"
+                android:layout_toRightOf="@+id/DynamicFragment_listview_item_headImage"
+                android:text="123"
+                android:textColor="@color/meibao_color_14"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/DynamicFragment_listview_item_commentContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/DynamicFragment_listview_item_name"
+                android:layout_below="@id/DynamicFragment_listview_item_name"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="放空间阿斯达克垃圾啊三季度阿帅房间爱疯狂了敬爱是考虑将阿斯利康阿帅鹿鼎记阿斯顿考虑将阿斯兰 "
+                android:textColor="@color/meibao_color_10"
+                android:textSize="@dimen/font4"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/DynamicFragment_listview_item_commentExclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/DynamicFragment_listview_item_commentContent"
+                android:layout_below="@id/DynamicFragment_listview_item_commentContent"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:text="#跑步#"
+                android:textColor="@color/meibao_color_10"
+                android:textSize="@dimen/font4"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/DynamicFragment_listview_item_layout"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/color_line" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/midLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp" >
+
+            <ImageView
+                android:id="@+id/taskSign"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/home_task_weida" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="19"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/leftLayout"
+            android:text="每天深蹲"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font3" />
+
+        <ImageView
+            android:id="@+id/taskZDsign"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignLeft="@id/title"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/shape_age"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/rightImage"
+            android:layout_width="16dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/home_shugang1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/yinsiImage"
+            android:layout_width="16dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rightImage"
+            android:src="@drawable/home_task_yinsi" />
+    </RelativeLayout>
+
+</LinearLayout>

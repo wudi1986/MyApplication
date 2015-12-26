@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yktx.check.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/framelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.android.gallety.MyImageView
+        android:id="@+id/child_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grid_groupchlidcolor"
+        android:scaleType="fitXY"
+        android:padding="0.5dp"
+        />
+
+    <CheckBox
+        android:id="@+id/child_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/pictures_select_icon"
+        android:layout_alignParentRight="true"
+        />
+    <CheckBox
+            android:id="@+id/child_checkbox_meijie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:layout_alignParentRight="true"
+            />
+
+</com.yktx.check.widget.SquareLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/grid_child_item.xml -->

@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slideswitch="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClockLimitActivity" 
+    android:background="@color/meibao_color_13">
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="限时"
+                    android:textSize="@dimen/font3" />
+
+                <ImageView
+                    android:id="@+id/clock_limit_SlideSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/switch_off"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/clock_limit_infolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/StartLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="开始时间"
+                        android:textSize="@dimen/font3"
+                         />
+
+                    <ImageView
+                        android:id="@+id/StartLayout_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_launcher"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_line" />
+                </RelativeLayout>
+
+                <TimePicker
+                    android:id="@+id/StartPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:background="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/StopLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="结束时间" 
+                        android:textSize="@dimen/font3"/>
+
+                    <ImageView
+                        android:id="@+id/StopLayout_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_launcher"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_line" />
+                </RelativeLayout>
+
+                <TimePicker
+                    android:id="@+id/StopPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                     android:background="@color/white"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_line" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="限制打卡时间，超出时间将不能打卡。"
+                android:textColor="@color/meibao_color_11" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/activity_clock_limit.xml -->

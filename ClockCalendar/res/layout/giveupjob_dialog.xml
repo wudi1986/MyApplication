@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/giveupjob_dialog_shape"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/giveUpJob_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="取消打卡"
+            android:textColor="@color/meibao_color_7"
+            android:textSize="@dimen/font3" />
+
+        <TextView
+            android:id="@+id/giveUpJob_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="确定取消打卡将删除最新的一次打卡内容" 
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font3"/>
+
+        <EditText
+            android:id="@+id/giveUpJob_dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="18dp" >
+
+            <TextView
+                android:id="@+id/giveUpJob_dialog_success"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/giveup_dialog_result_shape"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font4"
+                android:text="确定" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent"  />
+
+            <TextView
+                android:id="@+id/giveUpJob_dialog_close"
+               android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/giveup_dialog_cancel_shape"
+                android:gravity="center"
+                android:textColor="@color/meibao_color_1"
+                android:textSize="@dimen/font4"
+                android:text="返回" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

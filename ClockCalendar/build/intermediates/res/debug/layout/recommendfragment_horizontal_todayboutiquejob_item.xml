@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/todayboutiquejob_item_clockContentLayout"
+        android:layout_width="246dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/frame_shade"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/todayboutiquejob_item_topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <ImageView
+                android:id="@+id/todayboutiquejob_item_headImage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/head_null" />
+
+            <LinearLayout
+                android:id="@+id/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已坚持 "
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font4"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/todayboutiquejob_item_currentStreak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 天"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font4"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/todayboutiquejob_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/todayboutiquejob_item_headImage"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+             <ImageView
+                android:id="@+id/todayboutiquejob_item_medalImage"
+                android:layout_width="14dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:scaleType="fitStart"
+                android:layout_toRightOf="@id/todayboutiquejob_item_name"
+                android:layout_toLeftOf="@id/rightLayout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/todayboutiquejob_item_clockLevelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/newest_fragment_item_center_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:src="@drawable/building_beforname" />
+
+            <TextView
+                android:id="@+id/todayboutiquejob_item_clockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="42dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font3" />
+
+            <ImageView
+                android:id="@+id/todayboutiquejob_item_yisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/geren_yinsi"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/recommendfragment_horizontal_todayboutiquejob_item.xml -->

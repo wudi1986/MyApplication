@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:src="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/clock_my_firstitem_topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/meibao_color_13" >
+
+            <LinearLayout
+                android:id="@+id/clock_my_firstitem_pointLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="11dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/geren_zongjifen" />
+
+                <TextView
+                    android:id="@+id/clock_my_firstitem_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font30s" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/headImageLayout"
+            android:layout_width="104dp"
+            android:layout_height="98dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="31dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/geren_tx_bg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/clock_my_firstitem_headImage"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/zw_touxiang" />
+
+            <ImageView
+                android:id="@+id/clock_my_firstitem_BRImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/geren_camera"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/clock_my_firstitem_userNameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/headImageLayout"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@id/headImageLayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" >
+
+            <TextView
+                android:id="@+id/clock_my_firstitem_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font3" />
+
+            <ImageView
+                android:id="@+id/clock_my_firstitem_userNameImage"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/geren_xiugai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medalLayout"
+            android:layout_alignLeft="@id/clock_my_firstitem_userNameLayout"
+            android:layout_below="@id/clock_my_firstitem_userNameLayout"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal" >
+
+            <com.yktx.check.gridview.NoScrollGridView
+                android:id="@+id/medalGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:columnWidth="36dp"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="6dp"
+                android:gravity="center"
+                android:numColumns="9" >
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/clock_my_firstitem_attention" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingTop="4dp" -->
+                <!-- android:paddingBottom="4dp" > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:layout_width="18dp" -->
+                <!-- android:layout_height="16dp" -->
+                <!-- android:src="@drawable/geren_guanzhu" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/clock_my_firstitem_guanzhu" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_marginLeft="6dp" -->
+                <!-- android:gravity="center" -->
+                <!-- android:textColor="@color/meibao_color_10" -->
+                <!-- android:textSize="@dimen/font4" /> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dp" -->
+                <!-- android:layout_height="12dp" -->
+                <!-- android:layout_marginLeft="12dp" -->
+                <!-- android:background="@color/meibao_color_10" /> -->
+
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/clock_my_firstitem_fansLayout" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:gravity="center" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingTop="4dp" -->
+                <!-- android:paddingBottom="4dp"  > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:layout_width="18dp" -->
+                <!-- android:layout_height="16dp" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:src="@drawable/geren_fensi" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/clock_my_firstitem_fans" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_marginLeft="6dp" -->
+                <!-- android:gravity="center" -->
+                <!-- android:text="" -->
+                <!-- android:textColor="@color/meibao_color_10" -->
+                <!-- android:textSize="@dimen/font4" /> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dp" -->
+                <!-- android:layout_height="12dp" -->
+                <!-- android:layout_marginLeft="12dp" -->
+                <!-- android:background="@color/meibao_color_10" /> -->
+
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/clock_my_firstitem_takeClockLayout" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_marginLeft="12dp" -->
+                <!-- android:gravity="center" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingTop="4dp" -->
+                <!-- android:paddingBottom="4dp" > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:layout_width="18dp" -->
+                <!-- android:layout_height="16dp" -->
+                <!-- android:src="@drawable/geren_daka" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/clock_my_firstitem_takeClockNum" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_marginLeft="6dp" -->
+                <!-- android:gravity="center" -->
+                <!-- android:text="" -->
+                <!-- android:textColor="@color/meibao_color_10" -->
+                <!-- android:textSize="@dimen/font4" /> -->
+                <!-- </LinearLayout> -->
+            </com.yktx.check.gridview.NoScrollGridView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="4dp" -->
+    <!-- android:background="@drawable/yinying" /> -->
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/medalLayout" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="@color/meibao_color_15" -->
+<!--         android:orientation="vertical" > -->
+
+<!--         <TextView -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="24dp" -->
+<!--             android:layout_marginTop="8dp" -->
+<!--             android:text="我的勋章" -->
+<!--             android:textColor="@color/meibao_color_10" -->
+<!--             android:textSize="@dimen/font5" /> -->
+
+<!--         <com.yktx.check.gridview.NoScrollGridView -->
+<!--             android:id="@+id/medalGridView" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_marginLeft="22dp" -->
+<!--             android:layout_marginRight="18dp" -->
+<!--             android:layout_marginTop="8dp" -->
+<!--             android:columnWidth="32dp" -->
+<!--             android:gravity="center" -->
+<!--             android:numColumns="10" > -->
+<!--         </com.yktx.check.gridview.NoScrollGridView> -->
+<!--     </LinearLayout> -->
+
+</LinearLayout>

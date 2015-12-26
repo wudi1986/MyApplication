@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/hotLeftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/hotLeftImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/hotTextLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/hotLeftImage"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp" >
+
+                <TextView
+                    android:id="@+id/hotMsgnum"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/recommend_item_1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font3" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hotRightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" >
+
+            <TextView
+                android:id="@+id/hotGroupPeopleNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="69"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/hotGroupPeopleNum"
+                android:layout_toRightOf="@id/hotGroupPeopleNum"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="人"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hotBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/hotRightLayout"
+            android:layout_toRightOf="@id/hotLeftLayout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp" >
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_newitem_LeftTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="# "
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/hotGroupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/recommendfragment_listview_newitem_LeftTitle"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxWidth="176dp"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4"
+                android:text="大打算将到拉萨惊呆了快速惊呆了的快乐圣诞节" />
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_newitem_RightTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/hotGroupName"
+                android:text=" #"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/hotGroupMsgCount"
+                style="@style/chat_text_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/hotGroupName"
+                android:layout_below="@id/hotGroupName"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="累计产生3164条消息"
+                android:textColor="@color/meibao_color_6"
+                android:textSize="@dimen/font5"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/color_line" />
+
+</LinearLayout>

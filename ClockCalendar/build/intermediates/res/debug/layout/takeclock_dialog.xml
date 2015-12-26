@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout
+	    android:id="@+id/rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="18dp"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp" >
+	
+	    <RelativeLayout
+	        android:id="@+id/takephoto_dialog_BottomLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="82dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/home_paizhao_bg" >
+	
+	        <ImageView
+	            android:id="@+id/takephoto_dialog_success"
+	            android:layout_width="56dp"
+	            android:layout_height="59dp"
+	            android:layout_centerInParent="true"
+	            android:layout_gravity="center_horizontal"
+	            android:src="@drawable/clock_ok"
+	            android:paddingTop="3dp" />
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/takephoto_dialog_Layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/takephoto_dialog_BottomLayout"
+	        android:background="@drawable/takeclock_topbackground"
+	        android:minHeight="210dp" >
+	
+	        <LinearLayout
+	            android:id="@+id/titleLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="44dp"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginRight="16dp"
+	            android:layout_marginTop="16dp"
+	            android:background="@drawable/giveup_dialog_result_shape"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="16dp"
+	                android:gravity="bottom"
+	                android:text="打一卡"
+	                android:textColor="@color/meibao_color_10"
+	                android:textSize="@dimen/font2"
+	                android:visibility="gone" />
+	
+	            <View
+	                android:layout_width="1dp"
+	                android:layout_height="14dp"
+	                android:layout_marginBottom="3.5dp"
+	                android:layout_marginLeft="6dp"
+	                android:background="@color/meibao_color_10"
+	                android:visibility="gone" />
+	
+	            <ImageView
+	                android:id="@+id/taskImage"
+	                android:layout_width="18dp"
+	                android:layout_height="14dp"
+	                android:layout_marginLeft="12dp"
+	                android:src="@drawable/home_paizhao_duihao2" />
+	
+	            <TextView
+	                android:id="@+id/taskName"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="8dp"
+	                android:gravity="bottom"
+	                android:text="彩色的撒旦"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/font3" />
+	        </LinearLayout>
+	
+	        <View
+	            android:layout_width="wrap_content"
+	            android:layout_height="1dp"
+	            android:layout_below="@id/titleLayout"
+	            android:background="@color/meibao_color_1"
+	            android:visibility="gone" />
+	
+	        <LinearLayout
+	            android:id="@+id/takephoto_dialog_LinearLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/titleLayout"
+	            android:orientation="vertical" >
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="0.5dp"
+	                android:background="@color/meibao_color_12"
+	                android:visibility="gone" />
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="24dp"
+	                android:layout_marginRight="24dp"
+	                android:layout_marginTop="15dp"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+	
+	                <EditText
+	                    android:id="@+id/takeclock_dialog_input"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@null"
+	                    android:cursorVisible="false"
+	                    android:gravity="left|center_vertical"
+	                    android:hint="写备注"
+	                    android:textColor="@color/meibao_color_9"
+	                    android:textColorHint="@color/meibao_color_10"
+	                    android:textSize="@dimen/font4" />
+	            </LinearLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="0.5dp"
+	                android:background="@color/meibao_color_12"
+	                android:visibility="gone" />
+	
+	            <RelativeLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="20dp"
+	                android:layout_marginBottom="16dp"
+	                android:layout_marginLeft="24dp"
+	                android:layout_marginRight="24dp"
+	                android:layout_marginTop="10dp"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+	
+	                <LinearLayout
+	                    android:id="@+id/unitLayout"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+	
+	                    <TextView
+	                        android:id="@+id/unitText"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="8dp"
+	                        android:text="无"
+	                        android:textColor="@color/meibao_color_10"
+	                        android:textSize="@dimen/font4" />
+	
+	                    <ImageView
+	                        android:layout_marginLeft="4dp"
+	                        android:id="@+id/unitImage"
+	                        android:layout_width="10dp"
+	                        android:layout_height="6dp"
+	                        android:src="@drawable/home_paizhao_sanjiao" />
+	                </LinearLayout>
+	
+	                <EditText
+	                    android:id="@+id/takephoto_dialog_inputNum"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:layout_toLeftOf="@id/unitLayout"
+	                    android:background="@null"
+	                    android:gravity="left"
+	                    android:hint="记数值"
+	                    android:numeric="integer|decimal"
+	                    android:textColor="@color/meibao_color_9"
+	                    android:textColorHint="@color/meibao_color_10"
+	                    android:textSize="@dimen/font4" />
+	            </RelativeLayout>
+	
+	            <com.yktx.check.listview.HorizontalListView
+	                android:id="@+id/takeclock_dialog_HorizontalListView"
+	                android:layout_width="match_parent"
+	                android:layout_height="68dp" />
+	
+	            <RelativeLayout
+	                android:id="@+id/takephoto_dialog_synchronization"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	
+	                <ImageView
+	                    android:id="@+id/takephoto_dialog_weiboSY"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="14dp"
+	                    android:layout_alignParentRight="true"
+	                    android:src="@drawable/home_paizhao_weibo2"
+	                    android:visibility="gone" />
+	            </RelativeLayout>
+	        </LinearLayout>
+	    </RelativeLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/takephoto_dialog_outSide"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@+id/takephoto_dialog_Layout"
+	        android:orientation="vertical" >
+	    </LinearLayout>
+	
+	</RelativeLayout>
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/takeclock_dialog.xml -->

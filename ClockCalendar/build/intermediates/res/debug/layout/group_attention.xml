@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/meibao_color_15"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <RelativeLayout
+        android:id="@+id/groupSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/groupSearchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/guangchang_guanzhu_search" />
+
+        <TextView
+            android:id="@+id/groupSearchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/groupSearchImage"
+            android:text="搜索"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/groupSearchName"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/groupTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="三日内未打卡"
+            android:textColor="@color/meibao_color_14"
+            android:textSize="@dimen/font5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="如提醒有效"
+                android:textColor="@color/meibao_color_4"
+                android:textSize="@dimen/font5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/guangchang_gz_qiqiu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="+10"
+                android:textColor="@color/meibao_color_4"
+                android:textSize="@dimen/font5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/groupTopLayout_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/guangchang_guanzhu_bg"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp" >
+
+                <LinearLayout
+                    android:id="@+id/userLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/userHeadImage"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/icon" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="M-小丸子"
+                        android:textColor="@color/meibao_color_10"
+                        android:textSize="@dimen/font4" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@drawable/guangchang_gz_timebg"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font5" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/group_attention.xml -->

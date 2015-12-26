@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/title_layout" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line" />
+	<ScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    <ImageView
+	        android:id="@+id/image"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds="true"
+	        android:src="@drawable/jifenshuoming"
+	        android:contentDescription="@string/app_name"
+	        android:scaleType="centerCrop" />
+	</ScrollView>
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/point_explain_activity.xml -->

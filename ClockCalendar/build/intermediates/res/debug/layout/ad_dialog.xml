@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ad_dialog_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/ad_dialog_title"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="啥的进口量将阿斯顿卡就卡到静安寺了"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font3" />
+
+        <ImageView
+            android:id="@+id/ad_dialog_Image"
+            android:layout_width="231dp"
+            android:layout_height="173dp"
+            android:layout_below="@id/ad_dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banquanshuoming" />
+
+        <RelativeLayout
+            android:id="@+id/ad_dialog_contentLayout"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ad_dialog_Image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <ImageView
+                android:id="@+id/ad_dialog_contentJianTou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/guangchang_gz_jiantou" />
+
+            <TextView
+                android:id="@+id/ad_dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ad_dialog_contentJianTou"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="啥的进口量将阿斯顿卡就卡到静安寺了"
+                android:textColor="@color/meibao_color_10"
+                android:textSize="@dimen/font4" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ad_dialog_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" 
+            android:text="跳过"
+             android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font3"
+            android:gravity="bottom"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/ad_dialog.xml -->

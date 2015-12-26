@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp" 
+    android:background="@color/meibao_color_15">
+
+    <RelativeLayout
+        android:id="@+id/new_fragment_adapter_item_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_shade"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/new_fragment_adapter_item_Image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/guangchang_zuixin_duihao" />
+
+        <TextView
+            android:id="@+id/new_fragment_adapter_item_TaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/new_fragment_adapter_item_userLayout"
+            android:layout_toRightOf="@+id/new_fragment_adapter_item_Image"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font3"
+            android:layout_centerVertical="true" 
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <RelativeLayout
+            android:id="@+id/new_fragment_adapter_item_userLayout"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/new_fragment_adapter_item_headImage"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/guangchang_gc_lvdi"
+                android:padding="0.5dp"
+                android:src="@drawable/zw_touxiang" />
+
+            <TextView
+                android:id="@+id/new_fragment_adapter_item_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/new_fragment_adapter_item_headImage"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/new_fragment_adapter_item.xml -->

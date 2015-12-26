@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/takeClock_dialogImage_frist"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:scaleType="matrix"
+        android:src="@drawable/home_takephoto_unclick" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@+id/takeClock_dialogImage_frist"/>
+
+</RelativeLayout>

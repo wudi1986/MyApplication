@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meibao_color_15"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recommendfragment_listviewadapter_item_TopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/recommendfragment_listviewadapter_item_topLayoutImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/guangchang_gc_paihang" />
+
+        <TextView
+            android:id="@+id/recommendfragment_listviewadapter_item_topLayoutText"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@+id/recommendfragment_listviewadapter_item_topLayoutImage"
+            android:gravity="center_vertical"
+            android:text="今天我最牛"
+            android:textColor="@color/meibao_color_14"
+            android:textSize="@dimen/font5" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/recommendfragment_listviewadapter_item_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/frame_shade" >
+    </ListView>
+
+</LinearLayout>

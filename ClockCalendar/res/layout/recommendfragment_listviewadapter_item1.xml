@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/recommendfragment_listviewadapter_item1_headImageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/recommendfragment_listviewadapter_item1_headImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/recommendfragment_listviewadapter_item1_headImageBackground"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/guangchang_gc_first" />
+
+            <ImageView
+                android:id="@+id/recommendfragment_listviewadapter_item1_headImage1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/recommendfragment_listviewadapter_item1_detailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/recommendfragment_listviewadapter_item1_headImageLayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/recommendfragment_listviewadapter_item1_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <TextView
+                android:id="@+id/recommendfragment_listviewadapter_item1_JobName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="456"
+                android:textColor="@color/meibao_color_14"
+                android:textSize="@dimen/font5"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommendfragment_listviewadapter_item1_RightLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/recommendfragment_listviewadapter_item1_pointImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/guangchang_ph_qiqiu" />
+
+            <TextView
+                android:id="@+id/recommendfragment_listviewadapter_item1_pointNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:orientation="horizontal"
+                android:text="10"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font4"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommendfragment_listviewadapter_item1_RightLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/recommendfragment_listviewadapter_item1_totalDateCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textColor="@color/meibao_color_3"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                android:textColor="@color/meibao_color_3"
+                android:textSize="@dimen/font5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/color_line" />
+
+</LinearLayout>

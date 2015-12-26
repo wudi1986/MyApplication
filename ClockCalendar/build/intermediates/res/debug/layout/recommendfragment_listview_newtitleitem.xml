@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommendfragment_listview_newtitleitem_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meibao_color_15" >
+
+    <ImageView
+        android:id="@+id/recommendfragment_listview_newtitleitem_Image"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/guangchang_gc_chuangjian" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/recommendfragment_listview_newtitleitem_Image"
+        android:text="最新创建"
+        android:textColor="@color/meibao_color_14"
+        android:textSize="@dimen/font5" 
+        android:gravity="center"/>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/recommendfragment_listview_newtitleitem.xml -->

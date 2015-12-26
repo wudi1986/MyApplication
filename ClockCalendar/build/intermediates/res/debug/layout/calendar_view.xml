@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slide="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClockMainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip" >
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="日"
+                        android:textColor="@color/meibao_color_9" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="一"
+                        android:textColor="@color/meibao_color_9" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="二"
+                        android:textColor="@color/meibao_color_9" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="三"
+                        android:textColor="@color/meibao_color_9" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="四"
+                        android:textColor="@color/meibao_color_9" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="五"
+                        android:textColor="@color/meibao_color_9" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="六"
+                        android:textColor="@color/meibao_color_9" />
+                </TableRow>
+            </TableLayout>
+<!--             <LinearLayout  -->
+<!--                 android:id="@+id/clock_main_alertLayout" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:orientation="horizontal" -->
+<!--                 android:gravity="center" -->
+<!--                 android:background="@color/clock_new_image1" -->
+<!--                 android:visibility="gone" -->
+<!--                 > -->
+<!--                 <TextView  -->
+<!--                     android:id="@+id/clock_main_alertText" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:text="已连续打卡 10天" -->
+<!--                     /> -->
+<!--             </LinearLayout> -->
+        </RelativeLayout>
+
+<!--         <View -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="1px" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:background="#20000000" > -->
+<!--         </View> -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/calendar_view.xml -->

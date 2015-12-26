@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/task_info_titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/title_item_leftImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="累计打卡"
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font11s" />
+
+                <TextView
+                    android:id="@+id/activity_task_addUpClockJobContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="98"
+                    android:textColor="@color/meibao_color_1"
+                    android:textSize="@dimen/font11s" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="次"
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font11s" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="已坚持"
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font11s" />
+
+                <TextView
+                    android:id="@+id/activity_task_insistClockJobContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="@color/meibao_color_1"
+                    android:textSize="@dimen/font11s" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="天"
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font11s" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/title_item_rightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/xq_gengduo" />
+
+        <ImageView
+            android:id="@+id/title_item_createJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/title_item_rightImage"
+            android:src="@drawable/xq_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/expandablelist_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/task_info_titleLayout" >
+
+        <!-- <com.yktx.check.listview.XListView -->
+        <!-- android:id="@+id/infoListView" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="#00000000" -->
+        <!-- android:divider="@null" -->
+        <!-- android:scrollbars="none" -->
+        <!-- app:isMyProgressBar="false" /> -->
+
+        <com.yktx.check.listview.PinnedHeaderExpandableListView
+            android:id="@+id/expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/touming"
+            android:cacheColorHint="@color/white"
+            android:childIndicatorLeft="0dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:scrollbarAlwaysDrawHorizontalTrack="false" >
+        </com.yktx.check.listview.PinnedHeaderExpandableListView>
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view_anim" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/task_info_titleLayout"
+        android:background="@color/meibao_color_12"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/clock_main_alertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black90"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/leftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home_dakashibai" />
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="12dp" -->
+        <!-- android:layout_toRightOf="@id/leftImage" -->
+        <!-- android:orientation="vertical" > -->
+
+        <TextView
+            android:id="@+id/shareTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/leftImage"
+            android:text="打卡成功! "
+            android:textColor="@color/white"
+            android:textSize="@dimen/font2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clock_main_alertText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:text="第10天"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font5" />
+        <!-- </LinearLayout> -->
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/activity_task_info2.xml -->

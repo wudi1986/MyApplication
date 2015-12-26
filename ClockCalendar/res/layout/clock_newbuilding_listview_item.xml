@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/meibao_color_15" >
+
+        <TextView
+            android:id="@+id/new_listview_item_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:text="今天喝水"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font4" />
+
+        <TextView
+            android:id="@+id/new_listview_item_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/new_listview_item_AddContent"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="akdjkljlaskdjkldjas;lasdasdaskldjaskldjaskldj"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font5"
+            android:layout_alignParentLeft="true" 
+            android:paddingRight="16dp"/>
+
+        <ImageView
+            android:id="@+id/new_listview_item_AddContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/new_listview_item_addcontent_selector" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

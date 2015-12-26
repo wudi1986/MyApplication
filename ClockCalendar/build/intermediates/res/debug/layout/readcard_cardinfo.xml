@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame_shade"
+    android:padding="8dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/readcard_fragment_item_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/readcard_fragment_item_topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/readcard_fragment_item_headLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_headImage"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/head_null" />
+				
+                <TextView
+                    android:id="@+id/readcard_fragment_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/readcard_fragment_item_headImage"
+                    android:text="枫斗奋斗"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font4" />
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_medalImage"
+                    android:layout_width="14dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/readcard_fragment_item_name"
+                    android:src="@drawable/xz0" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/readcard_fragment_item_fanstypeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_fanstypeImage"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/geren_guanzhu_yiguan" />
+
+                <TextView
+                    android:id="@+id/readcard_fragment_item_fanstypeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:paddingBottom="0.5dp"
+                    android:text="关注"
+                    android:textColor="@color/meibao_color_11"
+                    android:textSize="@dimen/font4" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/readcard_fragment_item_blankTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/readcard_fragment_item_clockLevelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/newest_fragment_item_center_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:src="@drawable/building_beforname" />
+
+            <TextView
+                android:id="@+id/readcard_fragment_item_clockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="42dp"
+                android:text="而温热"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font3" />
+
+            <ImageView
+                android:id="@+id/readcard_fragment_item_yisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/geren_yinsi"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/readcard_fragment_item_takeClockNumLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp" >
+
+                <TextView
+                    android:id="@+id/readcard_fragment_item_takeClockNumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font4" />
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_takeClockNumImage"
+                    android:layout_width="26dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/guangchang_yk_renshu" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/readcard_fragment_item_IQSLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/readcard_fragment_item_clockContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/readcard_fragment_item_clockQuantityLayout"
+                android:ellipsize="end"
+                android:text="asdasldjasl阿斯顿卡桑德拉静安寺路口到静安寺考虑带敬爱考虑"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+
+            <RelativeLayout
+                android:id="@+id/readcard_fragment_item_clockContent_BottomBlackLayout"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_below="@+id/readcard_fragment_item_clockContent" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/readcard_fragment_item_clockQuantityLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="12dp" >
+
+                <TextView
+                    android:id="@+id/readcard_fragment_item_clockQuantity"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/taskinfo_quantity_shape"
+                    android:gravity="center"
+                    android:text="1335156"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font4" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/readcard_fragment_item_ImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/readcard_fragment_item_clockContent_BottomBlackLayout"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/readcard_fragment_item_ImageLayout_only1"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="204dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/login_image"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="102dp"
+                    android:layout_height="102dp" >
+
+                    <ImageView
+                        android:id="@+id/readcard_fragment_item_ImageLayout_Image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/login_image" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/guangchang_picture"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="102dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="3dp" >
+
+                    <ImageView
+                        android:id="@+id/readcard_fragment_item_ImageLayout_Image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/login_image" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/guangchang_picture"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="102dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="3dp" >
+
+                    <ImageView
+                        android:id="@+id/readcard_fragment_item_ImageLayout_Image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/login_image" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/guangchang_picture"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/readcard_fragment_item_numLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/readcard_fragment_item_ImageLayout"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/readcard_fragment_item_TimeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/building_time_image" />
+
+                    <TextView
+                        android:id="@+id/readcard_fragment_item_TimeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="30分钟"
+                        android:textColor="@color/meibao_color_11"
+                        android:textSize="@dimen/font5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/readcard_fragment_item_commentsNumLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/building_comment_image" />
+
+                    <TextView
+                        android:id="@+id/readcard_fragment_item_commentsNumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="0"
+                        android:textColor="@color/meibao_color_11"
+                        android:textSize="@dimen/font5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/readcard_fragment_item_votesNumLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/readcard_fragment_item_commentsNumLayout"
+                    android:layout_toLeftOf="@+id/readcard_fragment_item_commentsNumLayout"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/readcard_fragment_item_votesNumImage"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/building_vote_image" />
+
+                    <TextView
+                        android:id="@+id/readcard_fragment_item_votesNumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="0"
+                        android:textColor="@color/meibao_color_11"
+                        android:textSize="@dimen/font5" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/readcard_fragment_item_imagebottomblank"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_below="@+id/readcard_fragment_item_numLayout"
+                android:visibility="gone" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/loading_view_anim"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/readcard_cardinfo.xml -->

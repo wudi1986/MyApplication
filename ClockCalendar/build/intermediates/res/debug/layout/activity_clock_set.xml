@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slideswitch="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meibao_color_15"
+    android:orientation="vertical"
+    tools:context=".ClockSetActivity" >
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/meibao_color_12"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/frame_shade"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/clock_new_toplayout_shape"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp" >
+
+            <TextView
+                android:id="@+id/clock_set_inputClock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="输入条目名称"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/font3" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:paddingLeft="12dp" >
+
+            <EditText
+                android:id="@+id/clock_set_inputState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="记录自己坚持的点滴..."
+                android:inputType="textMultiLine"
+                android:textColor="@color/meibao_color_9"
+                android:textColorHint="@color/meibao_color_11"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:id="@+id/clock_set_inputStateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="12dp"
+                android:text="0/200"
+                android:textColor="@color/meibao_color_11"
+                android:textSize="@dimen/font4" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/color_line"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <ImageView
+                android:id="@+id/clock_set_isVisibleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/clock_new_unvisible" />
+
+            <TextView
+                android:id="@+id/clock_set_isVisibleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/clock_set_isVisibleImage"
+                android:textColor="@color/meibao_color_10"
+                android:textSize="@dimen/font4" />
+
+            <LinearLayout
+                android:id="@+id/clock_set_alertTimeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/clock_set_alertTimeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:src="@drawable/clock_new_unalert" />
+
+                <TextView
+                    android:id="@+id/clock_set_alertTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font4"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clock_set_limitTimeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@+id/clock_set_alertTimeLayout"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/clock_set_limitTimeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:src="@drawable/clock_new_unlimit" />
+
+                <TextView
+                    android:id="@+id/clock_set_limitTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text=""
+                    android:textColor="@color/meibao_color_10"
+                    android:textSize="@dimen/font4"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_line"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/meibao_color_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_paizhao_weibo1" />
+
+        <ImageView
+            android:id="@+id/clock_set_weiboSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/switch_on" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/meibao_color_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="20dp"
+        android:text="打开后，该卡将分享到微博"
+        android:textColor="@color/meibao_color_11"
+        android:textSize="@dimen/font5"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/meibao_color_12"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="暂停打卡"
+            android:textColor="@color/meibao_color_10"
+            android:textSize="@dimen/font4" />
+
+        <ImageView
+            android:id="@+id/clock_set_StopSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/switch_on" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/meibao_color_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="20dp"
+        android:text="暂停打卡后，该卡将不会出现在主页"
+        android:textColor="@color/meibao_color_11"
+        android:textSize="@dimen/font5" />
+
+    <RelativeLayout
+        android:id="@+id/clock_set_deleteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/meibao_color_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="删除卡片"
+            android:textColor="@color/meibao_color_10"
+            android:textSize="@dimen/font4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/meibao_color_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="20dp"
+        android:text="删除该卡后，之前打卡数据将无法恢复"
+        android:textColor="@color/meibao_color_11"
+        android:textSize="@dimen/font5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/clock_set_success"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/meibao_color_6"
+            android:textSize="@dimen/font2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/clock_set_success"
+            android:background="@color/color_line" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/clock_set_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="暂停打卡后，该打卡将不会出现在主页\n再次开启：个人主页-详情-设置-开启打卡"
+        android:textColor="@color/meibao_color_11"
+        android:textSize="@dimen/font4"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/activity_clock_set.xml -->

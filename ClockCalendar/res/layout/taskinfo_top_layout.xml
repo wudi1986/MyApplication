@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xq_yinying"
+        android:paddingLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/taskinfo_top_layout_Image"
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/xz0"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/taskinfo_top_layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/taskinfo_top_layout_Image"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font3"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/taskinfo_top_layout_Yinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/taskinfo_top_layout_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="36dp"
+            android:layout_toRightOf="@id/taskinfo_top_layout_name"
+            android:src="@drawable/geren_yinsi"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/taskinfo_top_layout_integralLayout"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignLeft="@id/taskinfo_top_layout_name"
+            android:layout_below="@id/taskinfo_top_layout_name"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1_light" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <ImageView
+                android:id="@+id/taskinfo_top_layout_progress7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/meibao_color_1_light" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/taskinfo_top_layout_State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskinfo_top_layout_integralLayout"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/meibao_color_10"
+            android:textSize="@dimen/font5" />
+
+        <ImageView
+            android:id="@+id/taskinfo_top_layout_set"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/taskinfo_top_layout_State"
+            android:src="@drawable/xq_gengduo" />
+
+        <TextView
+            android:id="@+id/taskinfo_top_layout_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskinfo_top_layout_State"
+            android:textColor="@color/meibao_color_11"
+            android:textSize="@dimen/font6"
+            android:layout_marginTop="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

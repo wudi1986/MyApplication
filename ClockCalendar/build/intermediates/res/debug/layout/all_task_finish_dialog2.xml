@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="328dp"
+        android:layout_height="256dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" >
+
+        <ImageView
+            android:id="@+id/bgLight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dh_dq_quanbu" />
+
+        <!--
+        <ImageView
+            android:id="@+id/takecolck_successdialog_topImage"
+            android:layout_width="212dp"
+            android:layout_height="116dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/dh_dq" />
+
+        <ImageView
+            android:id="@+id/daka_qiqiu1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/dh_dkcg_left" />
+
+        <ImageView
+            android:id="@+id/daka_qiqiu2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/dh_dkcg_right" />
+
+        <ImageView
+            android:id="@+id/takecolck_successdialog_result"
+            android:layout_width="240dp"
+            android:layout_height="14dp"
+            android:layout_below="@id/takecolck_successdialog_topImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/daka_dese" />-->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/closeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/dh_close" />
+
+    <!--
+    <LinearLayout
+        android:id="@+id/shareButtonLayout"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/sinaShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/daka_sina" />
+
+        <ImageView
+            android:id="@+id/daka_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/daka_circle" />
+
+        <ImageView
+            android:id="@+id/daka_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/daka_qq" />
+    </LinearLayout>
+    -->
+
+    <ImageView
+        android:id="@+id/shareImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:src="@drawable/dh_dq_share" />
+
+    <!--
+         <View
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/shareButtonLayout" />
+    -->
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/all_task_finish_dialog2.xml -->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/vote_info_item_headImage"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/vote_info_item_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/vote_info_item_headImage"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/vote_info_item_headImage"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingTop="4dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/vote_info_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小米"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font4" />
+
+        <TextView
+            android:id="@+id/vote_info_item_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textColor="@color/meibao_color_14"
+            android:textSize="@dimen/font5" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/vote_info_item_Layout"
+        android:layout_marginRight="16dp"
+        android:background="@color/meibao_color_12" />
+
+</RelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/vote_info_item.xml -->

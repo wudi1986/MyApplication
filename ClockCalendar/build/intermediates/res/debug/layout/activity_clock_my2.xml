@@ -1,0 +1,177 @@
+<com.yktx.check.util.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slideswitch="http://schemas.android.com/apk/res/com.yktx.check"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/meibao_color_13"
+        android:gravity="center_vertical" >
+
+        <View
+            android:id="@+id/title_item_layoutBackGround"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/title_item_leftImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_item_leftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_item_rightImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_dian" />
+
+        <!--
+        <ImageView
+            android:id="@+id/title_item_feedback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/title_item_rightImage"
+            android:src="@drawable/geren_yijianfankui" />
+
+        <ImageView
+            android:id="@+id/title_item_imprint"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/title_item_feedback"
+            android:src="@drawable/geren_banquan" />
+         <ImageView
+            android:id="@+id/title_item_takeClockSound"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/title_item_imprint"
+            android:src="@drawable/geren_sound_on" />-->
+
+        <TextView
+            android:id="@+id/title_item_content"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="三大块的垃圾阿帅考虑带敬爱是考虑到静安寺了"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font3" />
+
+        <TextView
+            android:id="@+id/title_item_rightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font4" />
+    </RelativeLayout>
+
+    <!-- <include -->
+    <!-- android:id="@+id/title_item_layout" -->
+    <!-- layout="@layout/title_layout" -->
+    <!-- android:background="@color/white" /> -->
+
+    <ScrollView
+        android:id="@+id/parentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_item_layout"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/meibao_color_15"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            tools:context=".ClockNewActivity" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:context=".ClockMyActivity" >
+
+                <include
+                    android:id="@+id/clock_my_topLayout"
+                    layout="@layout/clock_my_fristitem" />
+
+                <LinearLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/clock_my_topLayout"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <com.yktx.check.widget.OldPagerSlidingTabStrip
+                        android:id="@+id/ClockMy2_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tabLayout"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/sizeNullImage"
+                    android:layout_width="172dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="114dp"
+                    android:src="@drawable/zhanwei_wode_zanting"
+                    android:visibility="gone" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/ClockMy2_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tabLayout"
+                    android:background="@color/meibao_color_12"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.yktx.check.util.CustomRelativeLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/activity_clock_my2.xml -->

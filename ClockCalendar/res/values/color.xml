@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="white90">#e6ffffff</color>
+    <color name="white40">#66ffffff</color>
+    <color name="white50">#80ffffff</color>
+    <color name="white70">#b3ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black90">#e6000000</color>
+    <color name="black84">#D6000000</color>
+    <color name="blacktou">#4d000000</color>
+    <color name="focus_circle_bg">#F24949</color>
+    <color name="date_1">#F24949</color>
+    <color name="date_2">#66000000</color>
+    <color name="touming">#00000000</color>
+    <color name="grid_group_itemcolor">#fbe424</color>
+    <color name="grid_groupchlidcolor">#6c6c6c</color>
+    <color name="new_title_contentColor">#16AAFF</color>
+    <color name="color_line">#E3E3E3</color>
+    <color name="himt_text">#CACACA</color>
+    <color name="new_background">#F0F0F0</color>
+    <color name="new_check">#80E4D8</color>
+    <color name="clock_my_text">#2BA8F0</color>
+    
+    <color name="clock_new_image1">#FA7350</color>
+    <color name="clock_new_image2">#FF8FC6</color>
+    <color name="clock_new_image3">#FF9D77</color>
+    <color name="clock_new_image4">#FCD265</color>
+    <color name="clock_new_image5">#83E487</color>
+    <color name="clock_new_image6">#78CDFF</color>
+    <color name="clock_new_image7">#BA94FD</color>
+    <color name="clock_my_item_text">#C2C2C2</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <color name="meibao_line">#b2b2b2</color>
+  	<color name="meibao_color_1">#ff64c800</color>
+  	<color name="meibao_color_1_light">#ffe4f5d3</color>
+  	<color name="meibao_color_1_90">#e664c800</color>
+  	<color name="meibao_color_1_50">#8064c800</color>
+    <color name="meibao_color_2">#ffa0f0a0</color>
+    <color name="meibao_color_2_alf30">#4ca0f0a0</color>
+    <color name="meibao_color_2_60">#99a0f0a0</color>
+    <color name="meibao_color_2_80">#cca0f0a0</color>
+    <color name="meibao_color_3">#fffa6428</color>
+    <color name="meibao_color_4">#ffffa000</color>
+    <color name="meibao_color_5">#ff3cbeff</color>
+    <color name="meibao_color_6">#ffff0000</color>
+    <color name="meibao_color_6_alf50">#7fffa000</color>
+    <color name="meibao_color_7">#ff07a918</color>
+    <color name="meibao_color_8">#ff3cbeff</color>
+    <color name="meibao_color_9">#444444</color>
+    <color name="meibao_color_9tou">#CC444444</color>
+    <color name="meibao_color_10">#ff727171</color>
+    <color name="meibao_color_11">#ffb2b2b2</color>
+    <color name="meibao_color_12">#ffc8c8c8</color>
+    <color name="meibao_color_13">#fff5f5f5</color>
+    <color name="meibao_color_14">#ff969696</color>
+    <color name="meibao_color_14_light">#ffdbdbdb</color>
+    <color name="meibao_color_15">#fffafafa</color>
+    <color name="meibao_color_16">#fff00904</color>
+    <color name="meibao_color_17">#fffe005a</color>
+
+</resources>

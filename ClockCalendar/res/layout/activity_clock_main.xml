@@ -1,0 +1,364 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slide="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClockMainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/show_month_view" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginLeft="15dip" -->
+            <!-- android:layout_marginRight="10dip" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="7月" -->
+            <!-- android:textColor="#fffffe" -->
+            <!-- android:textSize="24sp" /> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/show_year_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="2014-"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font2" />
+
+                <TextView
+                    android:id="@+id/show_month_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="6"
+                    android:textColor="@color/meibao_color_9"
+                    android:textSize="@dimen/font2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/select_view_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/now_circle_view"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/home_today" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/my_calendar_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/home_touxiang" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/square_calendar_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/home_guangchang" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/xiaoxi_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/home_xiaoxi" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffffe"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#20000000"
+                android:visibility="gone" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip" >
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="日"
+                            android:textColor="@color/meibao_color_11" />
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="一"
+                            android:textColor="@color/meibao_color_11" />
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="二"
+                            android:textColor="@color/meibao_color_11" />
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="三"
+                            android:textColor="@color/meibao_color_11" />
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="四"
+                            android:textColor="@color/meibao_color_11" />
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="五"
+                            android:textColor="@color/meibao_color_11" />
+
+                        <TextView
+                            style="@style/dateStyle"
+                            android:text="六"
+                            android:textColor="@color/meibao_color_11" />
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#20000000"
+                android:visibility="gone" >
+            </View>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <com.yktx.view.StickyLayout
+                android:id="@+id/sticky_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/sticky_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- <ImageView -->
+                    <!-- android:id="@+id/zanweiImage" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/kongtu" /> -->
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" >
+                    </android.support.v4.view.ViewPager>
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/handlerText" -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:background="#fffffe" -->
+                <!-- android:minHeight="140dip" -->
+                <!-- android:orientation="vertical" > -->
+
+
+                <!-- <TextView -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="50dip" -->
+                <!-- android:gravity="center_vertical" -->
+                <!-- android:paddingLeft="5dip" -->
+                <!-- android:text="今日无日程安排" -->
+                <!-- android:textColor="#90000000" -->
+                <!-- android:textSize="16sp" /> -->
+
+
+                <!-- </LinearLayout> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:background="#fffffe" > -->
+                <!-- </View> -->
+
+                <LinearLayout
+                    android:id="@+id/sticky_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/white" />
+                    <!-- <ScrollView -->
+                    <!-- android:id="@+id/scrollView" -->
+                    <!-- android:layout_width="fill_parent" -->
+                    <!-- android:layout_height="fill_parent" > -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical" >
+
+                        <!-- <com.duguang.baseanimation.ui.listivew.deletelistview.ListViewCompat -->
+                        <!-- android:id="@+id/tastList" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="fill_parent" -->
+                        <!-- android:divider="@null" -->
+                        <!-- android:drawSelectorOnTop="false" -->
+                        <!-- android:listSelector="@android:color/transparent" -->
+                        <!-- android:scrollbars="none" -->
+                        <!-- android:dividerHeight="0dp" -->
+                        <!-- android:layout_marginTop="8dp"> -->
+                        <!-- </com.duguang.baseanimation.ui.listivew.deletelistview.ListViewCompat> -->
+
+                        <ListView
+                            android:id="@+id/tastList"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="8dp"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            android:drawSelectorOnTop="false"
+                            android:listSelector="@android:color/transparent"
+                            android:scrollbars="none" >
+                        </ListView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <!-- </ScrollView> -->
+                </LinearLayout>
+            </com.yktx.view.StickyLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" > -->
+
+<!--         <include layout="@layout/banner_layout" /> -->
+<!--     </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/clock_main_alertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black90"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/leftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_dakachenggong"
+            android:layout_marginLeft="16dp" />
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="12dp" -->
+        <!-- android:layout_toRightOf="@id/leftImage" -->
+        <!-- android:orientation="vertical" > -->
+
+        <TextView
+            android:id="@+id/shareTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/leftImage"
+            android:text="打卡成功! "
+            android:textColor="@color/white"
+            android:textSize="@dimen/font2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clock_main_alertText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:text="第10天"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font5" />
+        <!-- </LinearLayout> -->
+
+        <ImageView
+            android:id="@+id/shareImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/home_jiantou" />
+    </RelativeLayout>
+
+</RelativeLayout>

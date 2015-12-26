@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/recommendfragment_listview_horizontallistview_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp" >
+
+        <RelativeLayout
+            android:id="@+id/recommendfragment_listview_horizontallistview_item_headImageLayout"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" >
+
+            <ImageView
+                android:id="@+id/recommendfragment_listview_horizontallistview_item_headImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/guangchang_gc_touxiang1"
+                android:src="@drawable/zw_touxiang" />
+            <ImageView 
+                android:id="@+id/recommendfragment_listview_horizontallistview_item_headImageRanking"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/guangchang_gc_first"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recommendfragment_listview_horizontallistview_item_headImageLayout"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/recommendfragment_listview_horizontallistview_item_Name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/meibao_color_10"
+                android:textSize="@dimen/font5" />
+
+            <LinearLayout
+                android:id="@+id/recommendfragment_listview_horizontallistview_item_bottomLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/guangchang_gc_qiqiu" />
+
+                <TextView
+                    android:id="@+id/recommendfragment_listview_horizontallistview_item_qiqiuNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/meibao_color_1"
+                    android:textSize="@dimen/font5" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

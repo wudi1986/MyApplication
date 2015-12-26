@@ -1,0 +1,125 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- 百度自动更新的style -->
+     <style name="bdp_update_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item> 
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+    <style name="bdp_update_dialog_style_fullscreen" parent="@style/bdp_update_dialog_style">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="dateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/meibao_color_11</item>
+    </style>
+
+    <style name="takephoto_dialog_photoImage">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <!-- 窗口动画 -->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/sharedialog_start</item>
+        <item name="android:windowExitAnimation">@anim/sharedialog_end</item>
+    </style>
+    
+    
+    <!-- 窗口动画 -->
+    <style name="dialogWindowAnimSmall" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/small_2_big</item>
+        <item name="android:windowExitAnimation">@anim/sharedialog_end</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+ <!-- 背景透明 -->
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+         <item name="android:backgroundDimEnabled">true</item> <!-- activity 不变暗 -->
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+    </style>
+     <style name="NOmengceng_dialog" parent="@android:style/Theme.Dialog">
+         <item name="android:backgroundDimEnabled">false</item> <!-- activity 不变暗 -->
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+    </style>
+    <!-- 相机Dialog 的Style -->
+    <style name="CustomDiaLog_by_SongHang" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="chat_text_title_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/meibao_color_6</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="Activity_Base">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 重新主题去掉activity切换的动画效果  -->
+   <!--  <style name="noActivity_Animation" >
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+    </style>
+
+    <style name="noAnimation">  
+        <item name="android:activityOpenEnterAnimation">@null</item>  
+        <item name="android:activityOpenExitAnimation">@null</item>  
+        <item name="android:activityCloseEnterAnimation">@null</item>  
+        <item name="android:activityCloseExitAnimation">@null</item>  
+        <item name="android:taskOpenEnterAnimation">@null</item>  
+        <item name="android:taskOpenExitAnimation">@null</item>  
+        <item name="android:taskCloseEnterAnimation">@null</item>  
+        <item name="android:taskCloseExitAnimation">@null</item> 
+        <item name="android:taskToFrontEnterAnimation">@null</item>  
+        <item name="android:taskToFrontExitAnimation">@null</item> 
+        <item name="android:taskToBackEnterAnimation">@null</item>  
+        <item name="android:taskToBackExitAnimation">@null</item>  
+           
+    </style> --> 
+
+</resources>

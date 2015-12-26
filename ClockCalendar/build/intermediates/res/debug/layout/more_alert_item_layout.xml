@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slideswitch="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/more_alert_Layout"
+    android:background="@color/meibao_color_13">
+
+    <RelativeLayout
+        android:id="@+id/clock_more_alert_item_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/clock_more_alert_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="48sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/clock_more_alert_item_SlideSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:src="@drawable/switch_off" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clock_more_alert_item_time"
+            android:text="打卡提醒"
+            android:paddingLeft="4dp"
+            android:textColor="@color/meibao_color_9"
+            android:textSize="@dimen/font4" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/clock_more_alert_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line" />
+
+    <TimePicker
+        android:id="@+id/clock_more_alert_item_TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout><!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/more_alert_item_layout.xml -->

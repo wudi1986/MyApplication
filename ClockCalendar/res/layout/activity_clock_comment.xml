@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.yktx.check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ClockCommentActivity" >
+
+    <LinearLayout
+        android:id="@+id/comment_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginTop="12dp">
+
+<!--         <include -->
+<!--             android:id="@+id/comment_title" -->
+<!--             layout="@layout/title_layout" /> -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line"
+            android:visibility="gone" />
+
+        <include layout="@layout/group_info_first_item" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/huifuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/takeclock_dialog_input_shape" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/pl_pinglun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="评论"
+                android:textColor="@color/meibao_color_9"
+                android:textSize="@dimen/font4" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/huifuLayout"
+        android:layout_below="@+id/comment_topLayout" >
+
+        <ProgressBar
+            android:id="@+id/comment_ProgressBar"
+            android:layout_marginTop="4dp" 
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:indeterminateDrawable="@anim/xlistview_header_progress_bar"
+            android:visibility="visible" />
+
+        <com.yktx.check.listview.XListView
+            android:id="@+id/comment_XListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/touming"
+            android:divider="@null" 
+             android:scrollbars="none"
+            app:isMyProgressBar="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/building_dialog_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/black90" >
+
+            <ImageView
+                android:id="@+id/building_dialog_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/guangchang_bd_daqichenggong" />
+
+            <TextView
+                android:id="@+id/building_dialog_Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/building_dialog_image"
+                android:gravity="center"
+                android:text="添加成功!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/building_dialog_voteContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:text="你将得到气球 +1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font5"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

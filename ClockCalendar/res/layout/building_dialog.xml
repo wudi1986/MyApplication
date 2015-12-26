@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/building_dialog_Text"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_above="@+id/building_dialog_clickClock"
+        android:background="@color/black90"
+        android:gravity="center"
+        android:text="而温热" />
+
+    <LinearLayout
+        android:id="@+id/building_dialog_clickClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black90"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp" >
+
+        <ImageView
+            android:id="@+id/building_dialog_takeClock"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:src="@drawable/building_takeclock" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="1dp" />
+
+        <ImageView
+            android:id="@+id/building_dialog_inviteClock"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:src="@drawable/building_invite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/building_dialog_OutSide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/building_dialog_Text"
+        android:background="@drawable/toumingimg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</LinearLayout>

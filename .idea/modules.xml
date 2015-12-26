@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BAnim_ListViewLibrary/BAnim_ListViewLibrary.iml" filepath="$PROJECT_DIR$/BAnim_ListViewLibrary/BAnim_ListViewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BAnim_v7Library/BAnim_v7Library.iml" filepath="$PROJECT_DIR$/BAnim_v7Library/BAnim_v7Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClockCalendar/ClockCalendar.iml" filepath="$PROJECT_DIR$/ClockCalendar/ClockCalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XCL-Charts/XCL-Charts.iml" filepath="$PROJECT_DIR$/XCL-Charts/XCL-Charts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base_library_pullToRefresh_chenyoca/base_library_pullToRefresh_chenyoca.iml" filepath="$PROJECT_DIR$/base_library_pullToRefresh_chenyoca/base_library_pullToRefresh_chenyoca.iml" />
+    </modules>
+  </component>
+</project>

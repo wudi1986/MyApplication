@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="288dp"
+        android:layout_height="154dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/all_task_finish_dialog_shape" >
+
+        <ImageView
+            android:id="@+id/takecolck_successdialog_topImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_dakachenggong1" />
+
+        <ImageView
+            android:id="@+id/takecolck_successdialog_result"
+            android:layout_width="144dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/takecolck_successdialog_topImage"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home_dakachenggong_anniu" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

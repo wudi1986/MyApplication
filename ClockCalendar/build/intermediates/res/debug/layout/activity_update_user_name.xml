@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUserNameActivity" 
+    android:orientation="vertical">
+    <include 
+        layout="@layout/title_layout"
+        />
+	<EditText 
+	    android:id="@+id/update_user_name_input"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:background="@null"
+	    android:layout_marginTop="16dp"/>
+	<View 
+	   android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:background="@color/meibao_color_1"
+	    />
+
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:layout_marginTop="16dp"
+	    android:text="好的名字可以让你的朋友更容易记住你" />
+
+</LinearLayout>
+<!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/layout/activity_update_user_name.xml -->
