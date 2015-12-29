@@ -240,7 +240,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/xq_jiantou3" />
-            
+
         </RelativeLayout>
     </LinearLayout>
 

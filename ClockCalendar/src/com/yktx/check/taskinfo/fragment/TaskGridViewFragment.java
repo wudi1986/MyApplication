@@ -102,13 +102,12 @@ public class TaskGridViewFragment extends BaseFragment implements
 				R.layout.task_gridview_activity, null);
 		gridView = (RecyclerView) layout
 				.findViewById(R.id.pull_refresh_grid);
-
-		// 设置LinearLayoutManager
-		gridView.setLayoutManager(new GridLayoutManager(TaskGridViewFragment.this.getActivity(),7));
-		// 设置ItemAnimator
-		gridView.setItemAnimator(new DefaultItemAnimator());
 		adapter = new TaskGridViewAdapter(mContext, getUserID, taskID, getUserID);
+		gridView.setLayoutManager(new GridLayoutManager(TaskGridViewFragment.this.getActivity(),7));
 		gridView.setAdapter(adapter);
+		gridView.setItemAnimator(new DefaultItemAnimator());
+
+
 		// 初始化自定义的适配器
 		initView();
 		return layout;

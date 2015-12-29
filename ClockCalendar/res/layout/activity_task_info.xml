@@ -48,147 +48,6 @@
         android:orientation="vertical" >
 
         <include layout="@layout/taskinfo_top_layout" />
-        <!-- <RelativeLayout -->
-        <!-- android:id="@+id/taskNameLayout" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:background="@drawable/building_levelall_shape" > -->
-
-
-        <!-- <ImageView -->
-        <!-- android:id="@+id/task_item_clocktopImage" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:src="@drawable/guangchang_bd_duihao" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/task_item_clockName" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignParentTop="true" -->
-        <!-- android:layout_marginTop="10dp" -->
-        <!-- android:layout_toRightOf="@+id/task_item_clocktopImage" -->
-        <!-- android:text="打卡上点击拉萨的加拉斯柯" -->
-        <!-- android:textColor="@color/white" -->
-        <!-- android:textSize="@dimen/font3" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/task_item_content" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignLeft="@+id/task_item_clockName" -->
-        <!-- android:layout_below="@+id/task_item_clockName" -->
-        <!-- android:layout_marginTop="4dp" -->
-        <!-- android:paddingBottom="12dp" -->
-        <!-- android:textColor="@color/white" -->
-        <!-- android:textSize="@dimen/font5" -->
-        <!-- android:layout_marginRight="10dp" /> -->
-
-
-        <!-- <ImageView -->
-        <!-- android:id="@+id/task_item_isVisityImage" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignParentRight="true" -->
-        <!-- android:src="@drawable/xq_yinsi" /> -->
-        <!-- </RelativeLayout> -->
-
-
-        <!-- <LinearLayout -->
-        <!-- android:id="@+id/taskCenterLayout" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:background="@color/meibao_color_15" -->
-        <!-- android:paddingBottom="18dp" -->
-        <!-- android:paddingTop="13dp" > -->
-
-
-        <!-- <LinearLayout -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_weight="1" -->
-        <!-- android:gravity="center" -->
-        <!-- android:orientation="vertical" > -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/task_item_TotalDateCount" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="36dp" -->
-        <!-- android:paddingLeft="13dp" -->
-        <!-- android:paddingTop="2dp" -->
-        <!-- android:text="12" -->
-        <!-- android:textColor="@color/meibao_color_14" -->
-        <!-- android:textSize="@dimen/font1" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:paddingLeft="13dp" -->
-        <!-- android:text="坚持打卡天数" -->
-        <!-- android:textColor="@color/meibao_color_11" -->
-        <!-- android:textSize="@dimen/font5" /> -->
-        <!-- </LinearLayout> -->
-
-
-        <!-- <LinearLayout -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_weight="1" -->
-        <!-- android:gravity="center" -->
-        <!-- android:orientation="vertical" > -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/task_item_TotalcheckCount" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="36dp" -->
-        <!-- android:paddingTop="2dp" -->
-        <!-- android:text="12" -->
-        <!-- android:textColor="@color/meibao_color_14" -->
-        <!-- android:textSize="@dimen/font1" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:text="累计打卡次数" -->
-        <!-- android:textColor="@color/meibao_color_11" -->
-        <!-- android:textSize="@dimen/font5" /> -->
-        <!-- </LinearLayout> -->
-
-
-        <!-- <LinearLayout -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_weight="1" -->
-        <!-- android:gravity="center" -->
-        <!-- android:orientation="vertical" > -->
-
-
-        <!-- <ImageView -->
-        <!-- android:id="@+id/task_item_medalImage" -->
-        <!-- android:layout_width="39dp" -->
-        <!-- android:layout_height="36dp" -->
-        <!-- android:paddingBottom="4dp" -->
-        <!-- android:paddingRight="13dp" -->
-        <!-- android:paddingTop="2dp" -->
-        <!-- android:src="@drawable/xz1" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/task_item_qiqiuNum" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:paddingRight="13dp" -->
-        <!-- android:text="获得气球数量" -->
-        <!-- android:textColor="@color/meibao_color_11" -->
-        <!-- android:textSize="@dimen/font5" /> -->
-        <!-- </LinearLayout> -->
-        <!-- </LinearLayout> -->
 
         <RelativeLayout
             android:id="@+id/taskLastTwoTitleLayout"
@@ -240,7 +99,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/xq_jiantou3" />
-            
+
         </RelativeLayout>
     </LinearLayout>
 
@@ -250,14 +109,6 @@
         android:layout_height="48dp"
         android:layout_below="@+id/task_descriptionLayout" >
 
-        <!-- <com.yktx.check.listview.XListView -->
-        <!-- android:id="@+id/infoListView" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="match_parent" -->
-        <!-- android:background="#00000000" -->
-        <!-- android:divider="@null" -->
-        <!-- android:scrollbars="none" -->
-        <!-- app:isMyProgressBar="false" /> -->
 
         <com.yktx.check.widget.OldPagerSlidingTabStrip
             android:id="@+id/taskinfo_tabs"

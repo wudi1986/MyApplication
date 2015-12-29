@@ -46,6 +46,39 @@ public class TaskGridViewAdapter extends RecyclerView.Adapter<TaskGridViewAdapte
 
 	InfoTakePhoto infoTakePhoto;
 
+	String getUserID, taskID, userID;
+
+	public TaskGridViewAdapter(Activity context, String getUserID,
+							   String taskID, String userID) {
+		mContext = context;
+		this.getUserID = getUserID;
+		this.userID = userID;
+		this.taskID = taskID;
+		mInflater = LayoutInflater.from(context);
+		today = TimeUtil.getYYMMDD(System.currentTimeMillis());
+	}
+
+	String imageSource[];
+
+	public void setList(LinkedHashMap<String, GetByTaskIdCameraBean> curMap) {
+		this.curMap = curMap;
+		if (curMap.size() != 0) {
+			imageSource = new String[curMap.size()];
+
+			Iterator iter = curMap.entrySet().iterator();
+			int i = 0;
+			while (iter.hasNext()) {
+				Map.Entry entry = (Map.Entry) iter.next();
+				String key = (String) entry.getKey();
+				imageSource[i] = key + "";
+				GetByTaskIdCameraBean bean = curMap.get(key);
+				bean.setPosition(i);
+				curMap.put(key, bean);
+				i++;
+			}
+		}
+	}
+
 	public void setInfoTakePhoto(InfoTakePhoto takePhoto) {
 		infoTakePhoto = takePhoto;
 	}
@@ -54,12 +87,12 @@ public class TaskGridViewAdapter extends RecyclerView.Adapter<TaskGridViewAdapte
 	public MyViewHolder onCreateViewHolder(ViewGroup viewGroup, int i )
 	{
 		// 给ViewHolder设置布局文件
-		View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.task_gridview_activity, viewGroup, false);
+		View v = mInflater.inflate(R.layout.task_gridview_item, viewGroup, false);
 		return new MyViewHolder(v);
 	}
 
 	@Override
-	public void onBindViewHolder(MyViewHolder viewHolder, int i) {
+	public void onBindViewHolder(final MyViewHolder viewHolder, int i) {
 
 		showView(viewHolder,i);
 	}
@@ -89,7 +122,6 @@ public class TaskGridViewAdapter extends RecyclerView.Adapter<TaskGridViewAdapte
 					.findViewById(R.id.taskMorePhoto);
 			taskImageKuang = (ImageView) convertView
 					.findViewById(R.id.taskImageKuang);
-
 		}
 	}
 
@@ -104,38 +136,7 @@ public class TaskGridViewAdapter extends RecyclerView.Adapter<TaskGridViewAdapte
 		return position;
 	}
 
-	String getUserID, taskID, userID;
 
-	public TaskGridViewAdapter(Activity context, String getUserID,
-			String taskID, String userID) {
-		mContext = context;
-		this.getUserID = getUserID;
-		this.userID = userID;
-		this.taskID = taskID;
-		mInflater = LayoutInflater.from(context);
-		today = TimeUtil.getYYMMDD(System.currentTimeMillis());
-	}
-
-	String imageSource[];
-
-	public void setList(LinkedHashMap<String, GetByTaskIdCameraBean> curMap) {
-		this.curMap = curMap;
-		if (curMap.size() != 0) {
-			imageSource = new String[curMap.size()];
-
-			Iterator iter = curMap.entrySet().iterator();
-			int i = 0;
-			while (iter.hasNext()) {
-				Map.Entry entry = (Map.Entry) iter.next();
-				String key = (String) entry.getKey();
-				imageSource[i] = key + "";
-				GetByTaskIdCameraBean bean = curMap.get(key);
-				bean.setPosition(i);
-				curMap.put(key, bean);
-				i++;
-			}
-		}
-	}
 
 
 	@SuppressLint("ResourceAsColor")
