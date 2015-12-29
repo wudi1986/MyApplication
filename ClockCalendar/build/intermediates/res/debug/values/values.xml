@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_strings.xml -->
     <eat-comment/>
     <string-array name="umeng_fb_contact_key_array">
         <item>@string/umeng_fb_contact_key_email</item>
@@ -14,7 +14,7 @@
         <item>@string/umeng_fb_contact_phone</item>
         <item>@string/umeng_fb_contact_other</item>
     </string-array>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="actionBarDivider"/>
     <attr format="reference" name="actionBarItemBackground"/>
@@ -88,7 +88,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/color.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/color.xml -->
     <eat-comment/>
     <color name="background_tab_pressed">#6633B5E5</color>
     <color name="black">#000000</color>
@@ -142,21 +142,21 @@
     <color name="new_check">#80E4D8</color>
     <color name="new_title_contentColor">#16AAFF</color>
     <color name="touming">#00000000</color>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_color.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_color.xml -->
     <eat-comment/>
     <color name="umeng_fb_audo_dialog_bg">#F4F0745F</color>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_strings.xml -->
     <eat-comment/>
     <color name="umeng_fb_color_btn_normal">#333333</color>
     <color name="umeng_fb_color_btn_pressed">#1495F7</color>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_color.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_color.xml -->
     <eat-comment/>
     <color name="umeng_fb_gray">#FFD8D8D8</color>
     <color name="umeng_fb_lightblue">#FF64c800</color>
     <color name="umeng_fb_line">#DCDCDC</color>
     <color name="umeng_fb_secondary_text_light">#8A000000</color>
     <color name="umeng_fb_white">#FFFFFF</color>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_colors.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_colors.xml -->
     <eat-comment/>
     <color name="umeng_socialize_color_group">#2c3035</color>
     <color name="umeng_socialize_comments_bg">#F4F4F4</color>
@@ -171,7 +171,7 @@
     <color name="umeng_socialize_text_title">#464f61</color>
     <color name="umeng_socialize_text_ucenter">#595959</color>
     <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/color.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/color.xml -->
     <eat-comment/>
     <color name="white">#ffffff</color>
     <color name="white40">#66ffffff</color>
@@ -202,7 +202,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="XListView"><attr format="boolean" name="isMyProgressBar"/></declare-styleable>
     <declare-styleable name="slideswitch"><attr format="color" name="themeColor"/><attr format="boolean" name="isOpen"/><attr name="shape"><enum name="rect" value="1"/><enum name="circle" value="2"/></attr></declare-styleable>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height">48dip</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding">8dip</dimen>
@@ -220,14 +220,14 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/dimens.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <dimen name="alphabet_size">12dip</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/dimens.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="font1">22sp</dimen>
     <dimen name="font11s">11sp</dimen>
@@ -240,7 +240,7 @@
     <dimen name="font5">12sp</dimen>
     <dimen name="font6">10sp</dimen>
     <dimen name="font75s">75sp</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="header_footer_internal_padding">20dp</dimen>
     <dimen name="header_footer_left_right_padding">25dp</dimen>
@@ -248,10 +248,10 @@
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
     <dimen name="indicator_right_padding">10dp</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/dimens.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="textsice">16sp</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_dimens.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_dimens.xml -->
     <eat-comment/>
     <dimen name="umeng_fb_item_content_size">14sp</dimen>
     <dimen name="umeng_fb_item_height">48dp</dimen>
@@ -259,40 +259,40 @@
     <dimen name="umeng_fb_item_time_size">12sp</dimen>
     <dimen name="umeng_fb_record_btn_text_size">20sp</dimen>
     <dimen name="umeng_fb_spinner_padding_left">12dp</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
     <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="gridview" type="id"/>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="scrollview" type="id"/>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/attrs.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/attrs.xml -->
     <eat-comment/>
     <item name="slide_id_front_view" type="id"/>
     <item name="slide_id_left_back_view" type="id"/>
     <item name="slide_id_right_back_view" type="id"/>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="webview" type="id"/>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/strings.xml -->
     <eat-comment/>
     <string name="Download_the_pictures">下载图片: 0%</string>
     <string name="Download_the_pictures_new">下载图片:</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_update_string.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_update_string.xml -->
     <eat-comment/>
     <string name="UMAppUpdate">App updating</string>
     <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
@@ -308,7 +308,7 @@
     <string name="UMUpdateNow">Update now</string>
     <string name="UMUpdateSize">Update size: </string>
     <string name="UMUpdateTitle">New version found</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -323,15 +323,15 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="activity_clock_alertText">设置提醒后，你将会在设置时间接收到通知\n如果在提醒时间之前完成打卡，不再收到通知\n如果收不到通知请在设置里打开</string>
     <string name="app_name">打卡7</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="com_facebook_loading">Loading...</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/strings.xml -->
     <eat-comment/>
     <string name="file">[文件]</string>
     <string name="hello_world">Hello world!</string>
@@ -339,18 +339,18 @@
     <string name="location_prefix">[我的位置]</string>
     <string name="location_recv">[%1$s的位置]</string>
     <string name="picture">[图片]</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/base_library_pullToRefresh_chenyoca/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_from_bottom_pull_label">Pull to load more…</string>
     <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
     <string name="pull_to_refresh_from_bottom_release_label">Release to load more…</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
     <string name="pull_to_refresh_refreshing_label" translatable="false">加载中…</string>
     <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
     <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/strings.xml -->
     <eat-comment/>
     <string name="recording_video">录制视频</string>
     <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
@@ -379,7 +379,7 @@
     <string name="title_activity_imprint">ImprintActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_update_user_name">UpdateUserNameActivity</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_common_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_common_strings.xml -->
     <eat-comment/>
     <string name="umeng_common_action_cancel">Cancel</string>
     <string name="umeng_common_action_continue">Continue</string>
@@ -396,10 +396,10 @@
     <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
     <string name="umeng_common_start_download_notification">Download start.</string>
     <string name="umeng_common_start_patch_notification">Patch start.</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_example_home_btn_plus">社交分享</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_strings.xml -->
     <eat-comment/>
     <string name="umeng_fb_back">Back</string>
     <string name="umeng_fb_change_contact_title">Change contact Info</string>
@@ -439,7 +439,7 @@
     <string name="umeng_fb_time_this_year_format">MM/dd HH:mm:ss</string>
     <string name="umeng_fb_title">Feedback</string>
     <string name="umeng_fb_write_contact_title">Write contact Info</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_socialize_back" translatable="false">返回</string>
     <string name="umeng_socialize_cancel_btn_str">取消</string>
@@ -497,7 +497,7 @@
     <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败…</string>
     <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
     <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/strings.xml -->
     <eat-comment/>
     <string name="video">[视频]</string>
     <string name="viewpager_indicator">%1$d/%2$d</string>
@@ -510,7 +510,7 @@
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>
     <string name="xlistview_header_last_time">上次更新时间：</string>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/styles.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/styles.xml -->
     <eat-comment/>
     <style name="Activity_Base">
         <item name="android:windowBackground">@color/white</item>
@@ -549,7 +549,7 @@
         <item name="android:windowNoTitle">true</item><!-- 无标题 -->
         <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
     </style>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@android:color/primary_text_light</item>
@@ -972,20 +972,20 @@
     </style>
     <style name="Theme.Base.Light" parent="android:Theme.Light">
     </style>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_style.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar"/>
     <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_fb_style.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_fb_style.xml -->
     <eat-comment/>
     <style name="UmengFBSpeechStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground"> @android:color/transparent </item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar">
     </style>
@@ -1257,7 +1257,7 @@
     </style>
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Widget.AppCompat.Base.Spinner">
     </style>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/styles.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/styles.xml -->
     <eat-comment/>
     <style name="bdp_update_dialog_style" parent="android:Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -1306,7 +1306,7 @@
         <item name="android:layout_height">65dp</item>
         <item name="android:padding">2dp</item>
     </style>
-    <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/values/umeng_socialize_style.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values/umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="umeng_socialize_action_bar_item_im">
         <item name="android:layout_width">25dp</item>

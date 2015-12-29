@@ -8,4 +8,4 @@
 	<item android:state_focused="true"
 	    android:drawable="@drawable/umeng_update_button_cancel_bg_focused" />
 </selector>
-<!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/drawable/umeng_update_button_cancel_bg_selector.xml -->
+<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/umeng_update_button_cancel_bg_selector.xml -->

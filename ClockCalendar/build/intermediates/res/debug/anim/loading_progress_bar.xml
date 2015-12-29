@@ -2,4 +2,4 @@
 <animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"    
     android:drawable="@drawable/loading_anim2"    
     android:pivotX="50%"    
-    android:pivotY="50%" /> <!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/anim/loading_progress_bar.xml -->
+    android:pivotY="50%" /> <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/anim/loading_progress_bar.xml -->

@@ -4,4 +4,4 @@
     android:fromAlpha="0.0"
     android:interpolator="@android:anim/accelerate_interpolator"
     android:toAlpha="1.0" />
-<!-- From: file:/F:/KT/MyApplication/ClockCalendar/res/anim/fade.xml -->
+<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/anim/fade.xml -->

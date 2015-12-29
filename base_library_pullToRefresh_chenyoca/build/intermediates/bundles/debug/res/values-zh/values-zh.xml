@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/F:/KT/MyApplication/base_library_pullToRefresh_chenyoca/res/values-zh/pull_refresh_strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/base_library_pullToRefresh_chenyoca/res/values-zh/pull_refresh_strings.xml -->
     <eat-comment/>
     <string name="pull_to_load_more_label">向下加载更早内容…</string>
     <string name="pull_to_refresh_from_bottom_pull_label">向下加载更多…</string>

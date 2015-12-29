@@ -1,7 +1,7 @@
 apply plugin: 'android'
 
 dependencies {
-//    compile fileTree(dir: 'libs', include: ['**.*'])
+    //    compile fileTree(dir: 'libs', include: ['**.*'])
     compile fileTree(include: '**.*', dir: 'libs')
     compile project(':XCL-Charts')
     compile project(':BAnim_v7Library')
@@ -11,9 +11,22 @@ dependencies {
 }
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'yktxshangou'
+            keyPassword 'yktx2013'
+            storeFile file('C:/yktxkey')
+            storePassword 'yktx2013'
+        }
+        config1 {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('C:/debug.keystore')
+            storePassword 'android'
+        }
+    }
     compileSdkVersion 19
     buildToolsVersion "19.1.0"
-
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -23,7 +36,7 @@ android {
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
-            jniLibs.srcDirs =['libs']
+            jniLibs.srcDirs = ['libs']
         }
 
         // Move the tests to tests/java, tests/res, etc...
@@ -37,5 +50,10 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config1
+        }
     }
 }

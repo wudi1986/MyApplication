@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/F:/KT/MyApplication/XCL-Charts/res/values/strings.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/XCL-Charts/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">XCL-Charts</string>
-    <!-- From: file:/F:/KT/MyApplication/XCL-Charts/res/values/styles.xml -->
+    <!-- From: file:/C:/android%20test/MyApplication/XCL-Charts/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

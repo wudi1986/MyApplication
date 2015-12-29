@@ -1,18 +1,14 @@
 package com.yktx.check.adapter;
 
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,7 +23,11 @@ import com.yktx.check.util.DateUtil;
 import com.yktx.check.util.TimeUtil;
 import com.yktx.check.util.Tools;
 
-public class TaskGridViewAdapter extends BaseAdapter {
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class TaskGridViewAdapter extends RecyclerView.Adapter<TaskGridViewAdapter.MyViewHolder> {
 	private LinkedHashMap<String, GetByTaskIdCameraBean> curMap = new LinkedHashMap<String, GetByTaskIdCameraBean>();
 	protected LayoutInflater mInflater;
 
@@ -51,14 +51,49 @@ public class TaskGridViewAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public int getCount() {
-		return Integer.MAX_VALUE;
+	public MyViewHolder onCreateViewHolder(ViewGroup viewGroup, int i )
+	{
+		// 给ViewHolder设置布局文件
+		View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.task_gridview_activity, viewGroup, false);
+		return new MyViewHolder(v);
 	}
 
 	@Override
-	public Object getItem(int position) {
-		return position;
+	public void onBindViewHolder(MyViewHolder viewHolder, int i) {
+
+		showView(viewHolder,i);
 	}
+
+
+	@Override
+	public int getItemCount()
+	{
+		// 返回数据总数
+		return 500;
+	}
+
+	// 重写的自定义ViewHolder
+	class MyViewHolder extends RecyclerView.ViewHolder
+		{
+
+		public ImageView taskLastPhoto, taskMorePhoto, taskImageKuang;
+		public TextView taskBg;
+
+		public MyViewHolder(View convertView) {
+			super(convertView);
+			// TODO Auto-generated constructor stub
+			taskLastPhoto = (ImageView) convertView
+					.findViewById(R.id.taskLastPhoto);
+			taskBg = (TextView) convertView.findViewById(R.id.taskBg);
+			taskMorePhoto = (ImageView) convertView
+					.findViewById(R.id.taskMorePhoto);
+			taskImageKuang = (ImageView) convertView
+					.findViewById(R.id.taskImageKuang);
+
+		}
+	}
+
+
 
 	public void setCreateDate(CustomDate createDate) {
 		this.createDate = createDate;
@@ -102,27 +137,9 @@ public class TaskGridViewAdapter extends BaseAdapter {
 		}
 	}
 
-	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
-		final ViewHolder viewHolder;
-		// GetByTaskIdCameraBean bean = list.get(position);
-		// String path = mNewCameraBean.getTopImagePath();
-
-		if (convertView == null) {
-			convertView = mInflater.inflate(R.layout.task_gridview_item, null);
-			viewHolder = new ViewHolder(convertView);
-			convertView.setTag(viewHolder);
-		} else {
-			viewHolder = (ViewHolder) convertView.getTag();
-			// viewHolder.mImageView.setImageResource(R.drawable.bg_home_item_none);
-		}
-
-		showView(viewHolder, position);
-		return convertView;
-	}
 
 	@SuppressLint("ResourceAsColor")
-	private void showView(ViewHolder viewHolder, final int position) {
+	private void showView(MyViewHolder viewHolder, final int position) {
 		if (createDate != null) {
 			long curDate = DateUtil.getDate(createDate.toString(), -position);
 			String curDateStr = TimeUtil.getYYMMDD(curDate);
@@ -137,12 +154,12 @@ public class TaskGridViewAdapter extends BaseAdapter {
 				// 过去的
 				viewHolder.taskBg
 						.setBackgroundResource(R.color.meibao_color_13);
-				viewHolder.taskBg.setTextColor(R.color.meibao_color_11);
+				viewHolder.taskBg.setTextColor(mContext.getResources().getColor(R.color.meibao_color_11));
 			} else {
 				// 以后的
 				viewHolder.taskBg
 						.setBackgroundResource(R.color.meibao_color_15);
-				viewHolder.taskBg.setTextColor(R.color.meibao_color_12);
+				viewHolder.taskBg.setTextColor(mContext.getResources().getColor(R.color.meibao_color_12));
 			}
 
 			String array[] = curDateStr.split("-");
@@ -270,22 +287,6 @@ public class TaskGridViewAdapter extends BaseAdapter {
 
 	}
 
-	public static class ViewHolder {
-		private ImageView taskLastPhoto, taskMorePhoto, taskImageKuang;
-		private TextView taskBg;
-
-		public ViewHolder(View convertView) {
-			// TODO Auto-generated constructor stub
-			taskLastPhoto = (ImageView) convertView
-					.findViewById(R.id.taskLastPhoto);
-			taskBg = (TextView) convertView.findViewById(R.id.taskBg);
-			taskMorePhoto = (ImageView) convertView
-					.findViewById(R.id.taskMorePhoto);
-			taskImageKuang = (ImageView) convertView
-					.findViewById(R.id.taskImageKuang);
-
-		}
-	}
 
 	private void imageBrower(int position) {
 		Intent intent = new Intent(mContext, ImagePagerActivity2.class);

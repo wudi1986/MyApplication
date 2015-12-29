@@ -30,4 +30,4 @@
                android:scaleType="fitCenter"
                android:src="?attr/actionModeCloseDrawable"/>
 </LinearLayout>
-<!-- From: file:/F:/KT/MyApplication/BAnim_v7Library/res/layout/abc_action_mode_close_item.xml --><!-- From: file:/F:/KT/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/layout/abc_action_mode_close_item.xml -->
+<!-- From: file:/C:/android%20test/MyApplication/BAnim_v7Library/res/layout/abc_action_mode_close_item.xml --><!-- From: file:/C:/android%20test/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/layout/abc_action_mode_close_item.xml -->

@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,7 +43,7 @@ public class TaskGridViewFragment extends BaseFragment implements
 		ServiceListener {
 
 	TaskGridViewAdapter adapter;
-	GridView gridView;
+	RecyclerView gridView;
 	LinkedHashMap<String, GetByTaskIdCameraBean> curMap = new LinkedHashMap<String, GetByTaskIdCameraBean>(
 			10);
 	String taskID;
@@ -97,8 +100,16 @@ public class TaskGridViewFragment extends BaseFragment implements
 		// TODO Auto-generated method stub
 		layout = (RelativeLayout) inflater.inflate(
 				R.layout.task_gridview_activity, null);
-		gridView = (GridView) layout
+		gridView = (RecyclerView) layout
 				.findViewById(R.id.pull_refresh_grid);
+
+		// 设置LinearLayoutManager
+		gridView.setLayoutManager(new GridLayoutManager(TaskGridViewFragment.this.getActivity(),7));
+		// 设置ItemAnimator
+		gridView.setItemAnimator(new DefaultItemAnimator());
+		adapter = new TaskGridViewAdapter(mContext, getUserID, taskID, getUserID);
+		gridView.setAdapter(adapter);
+		// 初始化自定义的适配器
 		initView();
 		return layout;
 	}
@@ -200,8 +211,7 @@ public class TaskGridViewFragment extends BaseFragment implements
 					CustomDate lastSunday = DateUtil.getNextSunday(createDate);
 					Tools.getLog(Tools.i, "aaa", "arrays ============= "
 							+ lastSunday.toString());
-					adapter = new TaskGridViewAdapter(mContext, getUserID, taskID, getUserID);
-					gridView.setAdapter(adapter);
+
 					adapter.setCreateDate(lastSunday);
 					LinkedHashMap<String, GetByTaskIdCameraBean> cMap = bean
 							.getMapData();
