@@ -33,4 +33,4 @@
         android:layout_toRightOf="@id/layout"
         android:visibility="gone" />
 
-</RelativeLayout><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/layout/takeclock_dialog_horizontallistview_item.xml -->
+</RelativeLayout><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/layout/takeclock_dialog_horizontallistview_item.xml -->

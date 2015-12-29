@@ -3,4 +3,4 @@
 	<corners android:radius="5dp"/>
 	<stroke android:color="#FFb8b7b7" android:width="2dp"/>
 	<padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp"/>
-</shape><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/umeng_socialize_shape_hollow_grey.xml -->
+</shape><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/umeng_socialize_shape_hollow_grey.xml -->

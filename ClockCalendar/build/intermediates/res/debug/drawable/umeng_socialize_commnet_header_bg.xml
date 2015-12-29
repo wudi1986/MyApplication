@@ -5,4 +5,4 @@
     <item android:state_pressed="true" android:drawable="@android:drawable/list_selector_background" />
     <item android:state_selected="true" android:drawable="@android:drawable/list_selector_background" />
     <item android:drawable="@android:color/black" />
-</selector>      <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/umeng_socialize_commnet_header_bg.xml -->
+</selector>      <!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/umeng_socialize_commnet_header_bg.xml -->

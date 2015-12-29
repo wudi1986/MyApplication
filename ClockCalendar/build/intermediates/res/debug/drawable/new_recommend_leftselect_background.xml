@@ -3,4 +3,4 @@
     <item android:state_checked="true" android:drawable="@drawable/new_recommend_leftselect"></item>
     <item android:state_checked="false" android:drawable="@drawable/new_recommend_leftunselect"></item>
 </selector>
-<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/new_recommend_leftselect_background.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/new_recommend_leftselect_background.xml -->

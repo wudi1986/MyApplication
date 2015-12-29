@@ -16,4 +16,4 @@
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
            android:interpolator="@android:anim/decelerate_interpolator"
            android:fromYDelta="-50%p" android:toYDelta="0"
-           android:duration="@android:integer/config_mediumAnimTime"/><!-- From: file:/C:/android%20test/MyApplication/BAnim_v7Library/res/anim/abc_slide_in_top.xml --><!-- From: file:/C:/android%20test/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/anim/abc_slide_in_top.xml -->
+           android:duration="@android:integer/config_mediumAnimTime"/><!-- From: file:/D:/AndroidStudioProject/MyApplication/BAnim_v7Library/res/anim/abc_slide_in_top.xml --><!-- From: file:/D:/AndroidStudioProject/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/anim/abc_slide_in_top.xml -->

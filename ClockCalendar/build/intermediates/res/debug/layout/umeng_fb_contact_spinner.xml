@@ -5,4 +5,4 @@
     android:layout_height="wrap_content"
     android:textSize="@dimen/umeng_fb_item_content_size"
     android:gravity="center"
-    android:paddingBottom="0dp"/><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/layout/umeng_fb_contact_spinner.xml -->
+    android:paddingBottom="0dp"/><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/layout/umeng_fb_contact_spinner.xml -->

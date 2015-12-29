@@ -3,4 +3,4 @@
        android:interpolator="@android:anim/accelerate_interpolator"
        android:fromXDelta="1.0" android:toXDelta="0"
        android:duration="300" />
-<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/anim/hold.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/anim/hold.xml -->

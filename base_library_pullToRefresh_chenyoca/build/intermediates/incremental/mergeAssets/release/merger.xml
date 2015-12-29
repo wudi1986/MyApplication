@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\android test\MyApplication\base_library_pullToRefresh_chenyoca\assets"/></dataSet><dataSet config="release"><source path="C:\android test\MyApplication\base_library_pullToRefresh_chenyoca\build-types\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProject\MyApplication\base_library_pullToRefresh_chenyoca\assets"/></dataSet><dataSet config="release"><source path="D:\AndroidStudioProject\MyApplication\base_library_pullToRefresh_chenyoca\build-types\release\assets"/></dataSet></merger>

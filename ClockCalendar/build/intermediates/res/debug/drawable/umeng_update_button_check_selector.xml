@@ -28,4 +28,4 @@
           android:state_enabled="true"
           android:drawable="@drawable/umeng_update_btn_check_on_holo_light" />
 </selector>
-<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/umeng_update_button_check_selector.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/umeng_update_button_check_selector.xml -->

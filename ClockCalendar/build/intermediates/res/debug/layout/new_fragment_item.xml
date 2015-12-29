@@ -196,4 +196,4 @@
         android:layout_below="@id/bottomView"
         android:background="@color/meibao_line" />
 
-</RelativeLayout><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/layout/new_fragment_item.xml -->
+</RelativeLayout><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/layout/new_fragment_item.xml -->

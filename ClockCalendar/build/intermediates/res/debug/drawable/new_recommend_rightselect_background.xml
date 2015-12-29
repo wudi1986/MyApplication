@@ -3,4 +3,4 @@
 
     <item android:drawable="@drawable/new_recommend_rightselect" android:state_checked="true"></item>
 	<item android:drawable="@drawable/new_recommend_rightunselect" android:state_checked="false"></item>
-</selector><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/new_recommend_rightselect_background.xml -->
+</selector><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/new_recommend_rightselect_background.xml -->

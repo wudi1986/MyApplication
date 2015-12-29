@@ -10,4 +10,4 @@
         android:startOffset="-1"  
         android:repeatMode="restart"  
         android:repeatCount="-1"/>  
-</set> <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/anim/loading_animation.xml -->
+</set> <!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/anim/loading_animation.xml -->

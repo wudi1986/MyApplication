@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	package
-		ADDED from AndroidManifest.xml:4:11
 	android:sharedUserId
-		ADDED from AndroidManifest.xml:5:11
-	android:versionName
-		ADDED from AndroidManifest.xml:7:11
+		ADDED from AndroidManifest.xml:5:5
 	xmlns:tools
-		ADDED from AndroidManifest.xml:3:11
-	android:versionCode
-		ADDED from AndroidManifest.xml:6:11
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from AndroidManifest.xml:3:5
 	xmlns:android
 		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:4:5
+	android:versionName
+		ADDED from AndroidManifest.xml:7:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:6:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
 permission#com.yktx.check.permission.JPUSH_MESSAGE
 ADDED from AndroidManifest.xml:9:5
 	android:protectionLevel
@@ -37,880 +37,884 @@ ADDED from AndroidManifest.xml:17:5
 MERGED from MyApplication:XCL-Charts:unspecified:11:5
 MERGED from MyApplication:base_library_pullToRefresh_chenyoca:unspecified:9:5
 	android:label
-		ADDED from AndroidManifest.xml:21:9
-	android:allowBackup
-		ADDED from AndroidManifest.xml:19:9
-	android:icon
-		ADDED from MyApplication:XCL-Charts:unspecified:13:9
-	android:theme
 		ADDED from AndroidManifest.xml:22:9
-	android:name
+	android:allowBackup
+		ADDED from AndroidManifest.xml:20:9
+	android:icon
+		ADDED from AndroidManifest.xml:21:9
+		REJECTED from MyApplication:XCL-Charts:unspecified:13:9
+	android:theme
+		ADDED from AndroidManifest.xml:23:9
+		REJECTED from MyApplication:XCL-Charts:unspecified:15:9
+	tools:replace
 		ADDED from AndroidManifest.xml:18:9
+	android:name
+		ADDED from AndroidManifest.xml:19:9
 activity#com.yktx.check.MainActivity
-ADDED from AndroidManifest.xml:23:9
+ADDED from AndroidManifest.xml:24:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:27:13
+	android:label
 		ADDED from AndroidManifest.xml:26:13
-	android:label
+	android:name
 		ADDED from AndroidManifest.xml:25:13
-	android:name
-		ADDED from AndroidManifest.xml:24:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:27:13
+ADDED from AndroidManifest.xml:28:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:28:17
+ADDED from AndroidManifest.xml:29:17
 	android:name
-		ADDED from AndroidManifest.xml:28:25
+		ADDED from AndroidManifest.xml:29:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:30:17
+ADDED from AndroidManifest.xml:31:17
 	android:name
-		ADDED from AndroidManifest.xml:30:27
+		ADDED from AndroidManifest.xml:31:27
 activity#com.yktx.check.LoginActivity
-ADDED from AndroidManifest.xml:33:9
+ADDED from AndroidManifest.xml:34:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:39:13
+	android:label
 		ADDED from AndroidManifest.xml:38:13
-	android:label
-		ADDED from AndroidManifest.xml:37:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:36:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:37:13
+	android:name
 		ADDED from AndroidManifest.xml:35:13
-	android:name
-		ADDED from AndroidManifest.xml:34:13
 activity#com.yktx.check.ClockMainActivity
-ADDED from AndroidManifest.xml:40:9
+ADDED from AndroidManifest.xml:41:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:46:13
+	android:label
 		ADDED from AndroidManifest.xml:45:13
-	android:label
-		ADDED from AndroidManifest.xml:44:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:43:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:44:13
+	android:name
 		ADDED from AndroidManifest.xml:42:13
-	android:name
-		ADDED from AndroidManifest.xml:41:13
 activity#com.android.gallety.PhotoActivity
-ADDED from AndroidManifest.xml:48:9
+ADDED from AndroidManifest.xml:49:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:54:13
+	android:label
 		ADDED from AndroidManifest.xml:53:13
-	android:label
-		ADDED from AndroidManifest.xml:52:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:51:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:52:13
+	android:name
 		ADDED from AndroidManifest.xml:50:13
-	android:name
-		ADDED from AndroidManifest.xml:49:13
 activity#com.android.gallety.ShowImageActivity
-ADDED from AndroidManifest.xml:54:9
+ADDED from AndroidManifest.xml:55:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:60:13
+	android:label
 		ADDED from AndroidManifest.xml:59:13
-	android:label
-		ADDED from AndroidManifest.xml:58:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:57:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:58:13
+	android:name
 		ADDED from AndroidManifest.xml:56:13
-	android:name
-		ADDED from AndroidManifest.xml:55:13
 activity#com.yktx.check.ClockNewActivity
-ADDED from AndroidManifest.xml:60:9
+ADDED from AndroidManifest.xml:61:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:66:13
+	android:label
 		ADDED from AndroidManifest.xml:65:13
-	android:label
-		ADDED from AndroidManifest.xml:64:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:63:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:64:13
+	android:name
 		ADDED from AndroidManifest.xml:62:13
-	android:name
-		ADDED from AndroidManifest.xml:61:13
 activity#com.yktx.check.ClockMyActivity
-ADDED from AndroidManifest.xml:67:9
+ADDED from AndroidManifest.xml:68:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:73:13
+	android:label
 		ADDED from AndroidManifest.xml:72:13
-	android:label
-		ADDED from AndroidManifest.xml:71:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:70:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:71:13
+	android:name
 		ADDED from AndroidManifest.xml:69:13
-	android:name
-		ADDED from AndroidManifest.xml:68:13
 activity#com.yktx.check.ClockSetActivity
-ADDED from AndroidManifest.xml:74:9
+ADDED from AndroidManifest.xml:75:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:80:13
+	android:label
 		ADDED from AndroidManifest.xml:79:13
-	android:label
-		ADDED from AndroidManifest.xml:78:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:77:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:78:13
+	android:name
 		ADDED from AndroidManifest.xml:76:13
-	android:name
-		ADDED from AndroidManifest.xml:75:13
 activity#com.yktx.check.TaskInfoActivity
-ADDED from AndroidManifest.xml:81:9
+ADDED from AndroidManifest.xml:82:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:87:13
+	android:label
 		ADDED from AndroidManifest.xml:86:13
-	android:label
-		ADDED from AndroidManifest.xml:85:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:84:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:85:13
+	android:name
 		ADDED from AndroidManifest.xml:83:13
-	android:name
-		ADDED from AndroidManifest.xml:82:13
 activity#com.yktx.check.SetTaskSortActivity
-ADDED from AndroidManifest.xml:88:9
+ADDED from AndroidManifest.xml:89:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:94:13
+	android:label
 		ADDED from AndroidManifest.xml:93:13
-	android:label
-		ADDED from AndroidManifest.xml:92:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:91:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:92:13
+	android:name
 		ADDED from AndroidManifest.xml:90:13
-	android:name
-		ADDED from AndroidManifest.xml:89:13
 activity#com.yktx.check.DailycamShowActivity
-ADDED from AndroidManifest.xml:95:9
+ADDED from AndroidManifest.xml:96:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:101:13
+		ADDED from AndroidManifest.xml:102:13
 	android:label
-		ADDED from AndroidManifest.xml:100:13
-	android:hardwareAccelerated
-		ADDED from AndroidManifest.xml:99:13
-	android:exported
+		ADDED from AndroidManifest.xml:101:13
+	android:configChanges
 		ADDED from AndroidManifest.xml:98:13
-	android:configChanges
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:100:13
+	android:exported
+		ADDED from AndroidManifest.xml:99:13
+	android:name
 		ADDED from AndroidManifest.xml:97:13
-	android:name
-		ADDED from AndroidManifest.xml:96:13
 activity#com.yktx.check.XieYiActivity
-ADDED from AndroidManifest.xml:102:9
+ADDED from AndroidManifest.xml:103:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:106:13
-	android:exported
+		ADDED from AndroidManifest.xml:107:13
+	android:configChanges
 		ADDED from AndroidManifest.xml:105:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:106:13
+	android:name
 		ADDED from AndroidManifest.xml:104:13
-	android:name
-		ADDED from AndroidManifest.xml:103:13
 activity#com.yktx.check.PointExplainActivity
-ADDED from AndroidManifest.xml:107:9
+ADDED from AndroidManifest.xml:108:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:111:13
-	android:exported
-		ADDED from AndroidManifest.xml:110:13
+		ADDED from AndroidManifest.xml:112:13
 	android:configChanges
-		ADDED from AndroidManifest.xml:109:13
-	android:name
-		ADDED from AndroidManifest.xml:108:13
-service#com.clock.service.AddShowPhotoService
-ADDED from AndroidManifest.xml:114:9
-	android:enabled
-		ADDED from AndroidManifest.xml:116:13
+		ADDED from AndroidManifest.xml:110:13
 	android:exported
+		ADDED from AndroidManifest.xml:111:13
+	android:name
+		ADDED from AndroidManifest.xml:109:13
+service#com.clock.service.AddShowPhotoService
+ADDED from AndroidManifest.xml:115:9
+	android:exported
+		ADDED from AndroidManifest.xml:118:13
+	android:enabled
 		ADDED from AndroidManifest.xml:117:13
 	android:name
-		ADDED from AndroidManifest.xml:115:13
+		ADDED from AndroidManifest.xml:116:13
 intent-filter#cn.addshowphotoservice
-ADDED from AndroidManifest.xml:118:13
+ADDED from AndroidManifest.xml:119:13
 action#cn.addshowphotoservice
-ADDED from AndroidManifest.xml:119:17
+ADDED from AndroidManifest.xml:120:17
 	android:name
-		ADDED from AndroidManifest.xml:119:25
+		ADDED from AndroidManifest.xml:120:25
 service#com.clock.service.ConnFailJobService
-ADDED from AndroidManifest.xml:122:9
-	android:enabled
-		ADDED from AndroidManifest.xml:124:13
+ADDED from AndroidManifest.xml:123:9
 	android:exported
+		ADDED from AndroidManifest.xml:126:13
+	android:enabled
 		ADDED from AndroidManifest.xml:125:13
 	android:name
-		ADDED from AndroidManifest.xml:123:13
+		ADDED from AndroidManifest.xml:124:13
 intent-filter#cn.addconnfailjobservice
-ADDED from AndroidManifest.xml:126:13
+ADDED from AndroidManifest.xml:127:13
 action#cn.addconnfailjobservice
-ADDED from AndroidManifest.xml:127:17
+ADDED from AndroidManifest.xml:128:17
 	android:name
-		ADDED from AndroidManifest.xml:127:25
+		ADDED from AndroidManifest.xml:128:25
 activity#com.yktx.check.wxapi.WXEntryActivity
-ADDED from AndroidManifest.xml:131:9
+ADDED from AndroidManifest.xml:132:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:135:13
-	android:exported
-		ADDED from AndroidManifest.xml:134:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:133:13
-	android:theme
 		ADDED from AndroidManifest.xml:136:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:134:13
+	android:theme
+		ADDED from AndroidManifest.xml:137:13
+	android:exported
+		ADDED from AndroidManifest.xml:135:13
 	android:name
-		ADDED from AndroidManifest.xml:132:13
+		ADDED from AndroidManifest.xml:133:13
 activity#com.yktx.check.ClockAlertActivity
-ADDED from AndroidManifest.xml:137:9
+ADDED from AndroidManifest.xml:138:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:143:13
+	android:label
 		ADDED from AndroidManifest.xml:142:13
-	android:label
-		ADDED from AndroidManifest.xml:141:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:140:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:141:13
+	android:name
 		ADDED from AndroidManifest.xml:139:13
-	android:name
-		ADDED from AndroidManifest.xml:138:13
 activity#com.yktx.check.square.fragment.GroupMainFragmentActivity
-ADDED from AndroidManifest.xml:144:9
+ADDED from AndroidManifest.xml:145:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:149:13
-	android:label
-		ADDED from AndroidManifest.xml:148:13
-	android:exported
-		ADDED from AndroidManifest.xml:147:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:146:13
-	android:theme
 		ADDED from AndroidManifest.xml:150:13
-	android:name
-		ADDED from AndroidManifest.xml:145:13
-activity#com.yktx.check.ClockGroupInfoActivity
-ADDED from AndroidManifest.xml:151:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:156:13
 	android:label
-		ADDED from AndroidManifest.xml:155:13
-	android:exported
-		ADDED from AndroidManifest.xml:154:13
+		ADDED from AndroidManifest.xml:149:13
 	android:configChanges
-		ADDED from AndroidManifest.xml:153:13
-	android:name
-		ADDED from AndroidManifest.xml:152:13
-activity#com.yktx.check.ClockOtherUserActivity
-ADDED from AndroidManifest.xml:172:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:177:13
-	android:label
-		ADDED from AndroidManifest.xml:176:13
-	android:exported
-		ADDED from AndroidManifest.xml:175:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:174:13
-	android:name
-		ADDED from AndroidManifest.xml:173:13
-activity#com.yktx.check.ClockLimitActivity
-ADDED from AndroidManifest.xml:179:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:184:13
-	android:label
-		ADDED from AndroidManifest.xml:183:13
-	android:exported
-		ADDED from AndroidManifest.xml:182:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:181:13
-	android:name
-		ADDED from AndroidManifest.xml:180:13
-activity#com.yktx.check.ImagePagerActivity
-ADDED from AndroidManifest.xml:186:9
-	android:exported
-		ADDED from AndroidManifest.xml:189:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:188:13
+		ADDED from AndroidManifest.xml:147:13
 	android:theme
+		ADDED from AndroidManifest.xml:151:13
+	android:exported
+		ADDED from AndroidManifest.xml:148:13
+	android:name
+		ADDED from AndroidManifest.xml:146:13
+activity#com.yktx.check.ClockGroupInfoActivity
+ADDED from AndroidManifest.xml:152:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:157:13
+	android:label
+		ADDED from AndroidManifest.xml:156:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:154:13
+	android:exported
+		ADDED from AndroidManifest.xml:155:13
+	android:name
+		ADDED from AndroidManifest.xml:153:13
+activity#com.yktx.check.ClockOtherUserActivity
+ADDED from AndroidManifest.xml:173:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:178:13
+	android:label
+		ADDED from AndroidManifest.xml:177:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:175:13
+	android:exported
+		ADDED from AndroidManifest.xml:176:13
+	android:name
+		ADDED from AndroidManifest.xml:174:13
+activity#com.yktx.check.ClockLimitActivity
+ADDED from AndroidManifest.xml:180:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:185:13
+	android:label
+		ADDED from AndroidManifest.xml:184:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:182:13
+	android:exported
+		ADDED from AndroidManifest.xml:183:13
+	android:name
+		ADDED from AndroidManifest.xml:181:13
+activity#com.yktx.check.ImagePagerActivity
+ADDED from AndroidManifest.xml:187:9
+	android:configChanges
+		ADDED from AndroidManifest.xml:189:13
+	android:theme
+		ADDED from AndroidManifest.xml:191:13
+	android:exported
 		ADDED from AndroidManifest.xml:190:13
 	android:name
-		ADDED from AndroidManifest.xml:187:13
+		ADDED from AndroidManifest.xml:188:13
 activity#com.yktx.check.ImagePagerActivity2
-ADDED from AndroidManifest.xml:191:9
-	android:exported
-		ADDED from AndroidManifest.xml:194:13
+ADDED from AndroidManifest.xml:192:9
 	android:configChanges
-		ADDED from AndroidManifest.xml:193:13
+		ADDED from AndroidManifest.xml:194:13
 	android:theme
+		ADDED from AndroidManifest.xml:196:13
+	android:exported
 		ADDED from AndroidManifest.xml:195:13
 	android:name
-		ADDED from AndroidManifest.xml:192:13
+		ADDED from AndroidManifest.xml:193:13
 activity#com.yktx.check.ClockMoreAlertActivity
-ADDED from AndroidManifest.xml:196:9
+ADDED from AndroidManifest.xml:197:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:202:13
+	android:label
 		ADDED from AndroidManifest.xml:201:13
-	android:label
-		ADDED from AndroidManifest.xml:200:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:199:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:200:13
+	android:name
 		ADDED from AndroidManifest.xml:198:13
-	android:name
-		ADDED from AndroidManifest.xml:197:13
 activity#com.yktx.check.ClockSetHeadActivity
-ADDED from AndroidManifest.xml:202:9
+ADDED from AndroidManifest.xml:203:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:208:13
+	android:label
 		ADDED from AndroidManifest.xml:207:13
-	android:label
-		ADDED from AndroidManifest.xml:206:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:205:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:206:13
+	android:name
 		ADDED from AndroidManifest.xml:204:13
-	android:name
-		ADDED from AndroidManifest.xml:203:13
 activity#com.yktx.check.ShareAchievementActivity
-ADDED from AndroidManifest.xml:209:9
+ADDED from AndroidManifest.xml:210:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:215:13
+	android:label
 		ADDED from AndroidManifest.xml:214:13
-	android:label
-		ADDED from AndroidManifest.xml:213:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:212:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:213:13
+	android:name
 		ADDED from AndroidManifest.xml:211:13
-	android:name
-		ADDED from AndroidManifest.xml:210:13
 activity#com.yktx.check.UpdateUserNameActivity
-ADDED from AndroidManifest.xml:215:9
+ADDED from AndroidManifest.xml:216:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:221:13
+	android:label
 		ADDED from AndroidManifest.xml:220:13
-	android:label
-		ADDED from AndroidManifest.xml:219:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:218:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:219:13
+	android:name
 		ADDED from AndroidManifest.xml:217:13
-	android:name
-		ADDED from AndroidManifest.xml:216:13
 activity#com.yktx.check.ClockFansActivity
-ADDED from AndroidManifest.xml:222:9
+ADDED from AndroidManifest.xml:223:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:228:13
+	android:label
 		ADDED from AndroidManifest.xml:227:13
-	android:label
-		ADDED from AndroidManifest.xml:226:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:225:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:226:13
+	android:name
 		ADDED from AndroidManifest.xml:224:13
-	android:name
-		ADDED from AndroidManifest.xml:223:13
 activity#com.yktx.check.ClockThisTaskUserActivity
-ADDED from AndroidManifest.xml:229:9
+ADDED from AndroidManifest.xml:230:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:235:13
+	android:label
 		ADDED from AndroidManifest.xml:234:13
-	android:label
-		ADDED from AndroidManifest.xml:233:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:232:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:233:13
+	android:name
 		ADDED from AndroidManifest.xml:231:13
-	android:name
-		ADDED from AndroidManifest.xml:230:13
 activity#com.yktx.check.ClockDynamicActivity
-ADDED from AndroidManifest.xml:236:9
+ADDED from AndroidManifest.xml:237:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:242:13
+	android:label
 		ADDED from AndroidManifest.xml:241:13
-	android:label
-		ADDED from AndroidManifest.xml:240:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:239:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:240:13
+	android:name
 		ADDED from AndroidManifest.xml:238:13
-	android:name
-		ADDED from AndroidManifest.xml:237:13
 activity#com.yktx.check.ImprintActivity
-ADDED from AndroidManifest.xml:257:9
+ADDED from AndroidManifest.xml:258:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:263:13
+	android:label
 		ADDED from AndroidManifest.xml:262:13
-	android:label
-		ADDED from AndroidManifest.xml:261:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:260:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:261:13
+	android:name
 		ADDED from AndroidManifest.xml:259:13
-	android:name
-		ADDED from AndroidManifest.xml:258:13
 activity#com.yktx.first.viewpager.FirstViewPagerActivity
-ADDED from AndroidManifest.xml:264:9
+ADDED from AndroidManifest.xml:265:9
 	android:screenOrientation
+		ADDED from AndroidManifest.xml:270:13
+	android:label
 		ADDED from AndroidManifest.xml:269:13
-	android:label
-		ADDED from AndroidManifest.xml:268:13
-	android:exported
+	android:configChanges
 		ADDED from AndroidManifest.xml:267:13
-	android:configChanges
+	android:exported
+		ADDED from AndroidManifest.xml:268:13
+	android:name
 		ADDED from AndroidManifest.xml:266:13
-	android:name
-		ADDED from AndroidManifest.xml:265:13
 activity#com.yktx.check.ClockSearchActivity
-ADDED from AndroidManifest.xml:271:9
+ADDED from AndroidManifest.xml:272:9
 	android:label
+		ADDED from AndroidManifest.xml:274:13
+	android:name
 		ADDED from AndroidManifest.xml:273:13
-	android:name
-		ADDED from AndroidManifest.xml:272:13
 activity#com.yktx.check.ClockTaskDynamicActivity
-ADDED from AndroidManifest.xml:275:9
+ADDED from AndroidManifest.xml:276:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:280:13
-	android:label
-		ADDED from AndroidManifest.xml:279:13
-	android:exported
-		ADDED from AndroidManifest.xml:278:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:277:13
-	android:theme
 		ADDED from AndroidManifest.xml:281:13
-	android:name
-		ADDED from AndroidManifest.xml:276:13
-service#com.umeng.update.net.DownloadingService
-ADDED from AndroidManifest.xml:305:9
-	android:process
-		ADDED from AndroidManifest.xml:307:13
-	android:name
-		ADDED from AndroidManifest.xml:306:13
-activity#com.umeng.update.UpdateDialogActivity
-ADDED from AndroidManifest.xml:310:9
-	android:theme
-		ADDED from AndroidManifest.xml:312:13
-	android:name
-		ADDED from AndroidManifest.xml:311:13
-activity#com.umeng.socialize.view.ShareActivity
-ADDED from AndroidManifest.xml:317:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:323:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:321:13
-	android:exported
-		ADDED from AndroidManifest.xml:320:13
-	android:noHistory
-		ADDED from AndroidManifest.xml:322:13
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:325:13
+	android:label
+		ADDED from AndroidManifest.xml:280:13
 	android:configChanges
-		ADDED from AndroidManifest.xml:319:13
+		ADDED from AndroidManifest.xml:278:13
 	android:theme
-		ADDED from AndroidManifest.xml:324:13
-	android:name
-		ADDED from AndroidManifest.xml:318:13
-activity#com.tencent.tauth.AuthActivity
-ADDED from AndroidManifest.xml:329:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:334:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:332:13
+		ADDED from AndroidManifest.xml:282:13
 	android:exported
-		ADDED from AndroidManifest.xml:331:13
+		ADDED from AndroidManifest.xml:279:13
+	android:name
+		ADDED from AndroidManifest.xml:277:13
+service#com.umeng.update.net.DownloadingService
+ADDED from AndroidManifest.xml:306:9
+	android:process
+		ADDED from AndroidManifest.xml:308:13
+	android:name
+		ADDED from AndroidManifest.xml:307:13
+activity#com.umeng.update.UpdateDialogActivity
+ADDED from AndroidManifest.xml:311:9
+	android:theme
+		ADDED from AndroidManifest.xml:313:13
+	android:name
+		ADDED from AndroidManifest.xml:312:13
+activity#com.umeng.socialize.view.ShareActivity
+ADDED from AndroidManifest.xml:318:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:326:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:324:13
 	android:noHistory
+		ADDED from AndroidManifest.xml:323:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:320:13
+	android:theme
+		ADDED from AndroidManifest.xml:325:13
+	android:exported
+		ADDED from AndroidManifest.xml:321:13
+	android:name
+		ADDED from AndroidManifest.xml:319:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:322:13
+activity#com.tencent.tauth.AuthActivity
+ADDED from AndroidManifest.xml:330:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:335:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:334:13
+	android:exported
+		ADDED from AndroidManifest.xml:332:13
+	android:name
+		ADDED from AndroidManifest.xml:331:13
+	android:launchMode
 		ADDED from AndroidManifest.xml:333:13
-	android:name
-		ADDED from AndroidManifest.xml:330:13
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:335:13
+ADDED from AndroidManifest.xml:336:13
 action#android.intent.action.VIEW
-ADDED from AndroidManifest.xml:336:17
+ADDED from AndroidManifest.xml:337:17
 	android:name
-		ADDED from AndroidManifest.xml:336:25
+		ADDED from AndroidManifest.xml:337:25
 category#android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:338:17
-	android:name
-		ADDED from AndroidManifest.xml:338:27
-category#android.intent.category.BROWSABLE
 ADDED from AndroidManifest.xml:339:17
 	android:name
 		ADDED from AndroidManifest.xml:339:27
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:340:17
+	android:name
+		ADDED from AndroidManifest.xml:340:27
 data
-ADDED from AndroidManifest.xml:341:17
+ADDED from AndroidManifest.xml:342:17
 	android:scheme
-		ADDED from AndroidManifest.xml:341:23
+		ADDED from AndroidManifest.xml:342:23
 activity#com.tencent.connect.common.AssistActivity
-ADDED from AndroidManifest.xml:344:9
+ADDED from AndroidManifest.xml:345:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:347:13
-	android:exported
-		ADDED from AndroidManifest.xml:346:13
-	android:theme
 		ADDED from AndroidManifest.xml:348:13
-	android:name
-		ADDED from AndroidManifest.xml:345:13
-activity#com.umeng.fb.ConversationActivity
-ADDED from AndroidManifest.xml:351:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:357:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:355:13
-	android:exported
-		ADDED from AndroidManifest.xml:354:13
-	android:noHistory
-		ADDED from AndroidManifest.xml:356:13
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:358:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:353:13
-	android:name
-		ADDED from AndroidManifest.xml:352:13
-activity#cn.jpush.android.ui.PushActivity
-ADDED from AndroidManifest.xml:362:9
-	android:configChanges
-		ADDED from AndroidManifest.xml:364:13
 	android:theme
+		ADDED from AndroidManifest.xml:349:13
+	android:exported
+		ADDED from AndroidManifest.xml:347:13
+	android:name
+		ADDED from AndroidManifest.xml:346:13
+activity#com.umeng.fb.ConversationActivity
+ADDED from AndroidManifest.xml:352:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:359:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:358:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:357:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:354:13
+	android:exported
+		ADDED from AndroidManifest.xml:355:13
+	android:name
+		ADDED from AndroidManifest.xml:353:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:356:13
+activity#cn.jpush.android.ui.PushActivity
+ADDED from AndroidManifest.xml:363:9
+	android:configChanges
 		ADDED from AndroidManifest.xml:365:13
+	android:theme
+		ADDED from AndroidManifest.xml:366:13
 	android:name
-		ADDED from AndroidManifest.xml:363:13
+		ADDED from AndroidManifest.xml:364:13
 intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.yktx.check
-ADDED from AndroidManifest.xml:366:13
+ADDED from AndroidManifest.xml:367:13
 action#cn.jpush.android.ui.PushActivity
-ADDED from AndroidManifest.xml:367:17
+ADDED from AndroidManifest.xml:368:17
 	android:name
-		ADDED from AndroidManifest.xml:367:25
+		ADDED from AndroidManifest.xml:368:25
 category#com.yktx.check
-ADDED from AndroidManifest.xml:370:17
+ADDED from AndroidManifest.xml:371:17
 	android:name
-		ADDED from AndroidManifest.xml:370:27
+		ADDED from AndroidManifest.xml:371:27
 receiver#com.yktx.broadcast.CallAlarm
-ADDED from AndroidManifest.xml:375:9
+ADDED from AndroidManifest.xml:376:9
 	android:enabled
+		ADDED from AndroidManifest.xml:378:13
+	android:name
 		ADDED from AndroidManifest.xml:377:13
-	android:name
-		ADDED from AndroidManifest.xml:376:13
 service#com.clock.service.StatusService
-ADDED from AndroidManifest.xml:379:9
+ADDED from AndroidManifest.xml:380:9
 	android:exported
-		ADDED from AndroidManifest.xml:381:13
+		ADDED from AndroidManifest.xml:382:13
 	android:name
-		ADDED from AndroidManifest.xml:380:13
+		ADDED from AndroidManifest.xml:381:13
 service#cn.jpush.android.service.DownloadService
-ADDED from AndroidManifest.xml:384:9
-	android:enabled
-		ADDED from AndroidManifest.xml:386:13
+ADDED from AndroidManifest.xml:385:9
 	android:exported
+		ADDED from AndroidManifest.xml:388:13
+	android:enabled
 		ADDED from AndroidManifest.xml:387:13
 	android:name
-		ADDED from AndroidManifest.xml:385:13
+		ADDED from AndroidManifest.xml:386:13
 receiver#cn.jpush.android.service.AlarmReceiver
-ADDED from AndroidManifest.xml:390:9
+ADDED from AndroidManifest.xml:391:9
 	android:name
-		ADDED from AndroidManifest.xml:390:19
+		ADDED from AndroidManifest.xml:391:19
 service#cn.jpush.android.service.PushService
-ADDED from AndroidManifest.xml:392:9
-	android:enabled
-		ADDED from AndroidManifest.xml:394:13
+ADDED from AndroidManifest.xml:393:9
 	android:exported
+		ADDED from AndroidManifest.xml:396:13
+	android:enabled
 		ADDED from AndroidManifest.xml:395:13
 	android:name
-		ADDED from AndroidManifest.xml:393:13
+		ADDED from AndroidManifest.xml:394:13
 intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
-ADDED from AndroidManifest.xml:396:13
+ADDED from AndroidManifest.xml:397:13
 action#cn.jpush.android.intent.REGISTER
-ADDED from AndroidManifest.xml:397:17
-	android:name
-		ADDED from AndroidManifest.xml:397:25
-action#cn.jpush.android.intent.REPORT
 ADDED from AndroidManifest.xml:398:17
 	android:name
 		ADDED from AndroidManifest.xml:398:25
-action#cn.jpush.android.intent.PushService
+action#cn.jpush.android.intent.REPORT
 ADDED from AndroidManifest.xml:399:17
 	android:name
 		ADDED from AndroidManifest.xml:399:25
-action#cn.jpush.android.intent.PUSH_TIME
+action#cn.jpush.android.intent.PushService
 ADDED from AndroidManifest.xml:400:17
 	android:name
 		ADDED from AndroidManifest.xml:400:25
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from AndroidManifest.xml:401:17
+	android:name
+		ADDED from AndroidManifest.xml:401:25
 receiver#cn.jpush.android.service.PushReceiver
-ADDED from AndroidManifest.xml:405:9
+ADDED from AndroidManifest.xml:406:9
 	android:enabled
+		ADDED from AndroidManifest.xml:408:13
+	android:name
 		ADDED from AndroidManifest.xml:407:13
-	android:name
-		ADDED from AndroidManifest.xml:406:13
 intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.yktx.check
-ADDED from AndroidManifest.xml:408:13
+ADDED from AndroidManifest.xml:409:13
 	android:priority
-		ADDED from AndroidManifest.xml:408:28
+		ADDED from AndroidManifest.xml:409:28
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
-ADDED from AndroidManifest.xml:409:17
+ADDED from AndroidManifest.xml:410:17
 	android:name
-		ADDED from AndroidManifest.xml:409:25
+		ADDED from AndroidManifest.xml:410:25
 intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from AndroidManifest.xml:413:13
+ADDED from AndroidManifest.xml:414:13
 action#android.intent.action.USER_PRESENT
-ADDED from AndroidManifest.xml:414:17
-	android:name
-		ADDED from AndroidManifest.xml:414:25
-action#android.net.conn.CONNECTIVITY_CHANGE
 ADDED from AndroidManifest.xml:415:17
 	android:name
 		ADDED from AndroidManifest.xml:415:25
-intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
-ADDED from AndroidManifest.xml:418:13
-action#android.intent.action.PACKAGE_ADDED
-ADDED from AndroidManifest.xml:419:17
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:416:17
 	android:name
-		ADDED from AndroidManifest.xml:419:25
-action#android.intent.action.PACKAGE_REMOVED
+		ADDED from AndroidManifest.xml:416:25
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:419:13
+action#android.intent.action.PACKAGE_ADDED
 ADDED from AndroidManifest.xml:420:17
 	android:name
 		ADDED from AndroidManifest.xml:420:25
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:421:17
+	android:name
+		ADDED from AndroidManifest.xml:421:25
 receiver#com.clock.service.MyReceiver
-ADDED from AndroidManifest.xml:425:9
+ADDED from AndroidManifest.xml:426:9
 	android:enabled
+		ADDED from AndroidManifest.xml:428:13
+	android:name
 		ADDED from AndroidManifest.xml:427:13
-	android:name
-		ADDED from AndroidManifest.xml:426:13
 intent-filter#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+cn.jpush.android.intent.UNREGISTRATION+com.yktx.check
-ADDED from AndroidManifest.xml:428:13
+ADDED from AndroidManifest.xml:429:13
 action#cn.jpush.android.intent.REGISTRATION
-ADDED from AndroidManifest.xml:429:17
+ADDED from AndroidManifest.xml:430:17
 	android:name
-		ADDED from AndroidManifest.xml:429:25
+		ADDED from AndroidManifest.xml:430:25
 action#cn.jpush.android.intent.UNREGISTRATION
-ADDED from AndroidManifest.xml:431:17
-	android:name
-		ADDED from AndroidManifest.xml:431:25
-action#cn.jpush.android.intent.MESSAGE_RECEIVED
 ADDED from AndroidManifest.xml:432:17
 	android:name
 		ADDED from AndroidManifest.xml:432:25
+action#cn.jpush.android.intent.MESSAGE_RECEIVED
+ADDED from AndroidManifest.xml:433:17
+	android:name
+		ADDED from AndroidManifest.xml:433:25
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
-ADDED from AndroidManifest.xml:434:17
+ADDED from AndroidManifest.xml:435:17
 	android:name
-		ADDED from AndroidManifest.xml:434:25
+		ADDED from AndroidManifest.xml:435:25
 action#cn.jpush.android.intent.NOTIFICATION_OPENED
-ADDED from AndroidManifest.xml:436:17
+ADDED from AndroidManifest.xml:437:17
 	android:name
-		ADDED from AndroidManifest.xml:436:25
+		ADDED from AndroidManifest.xml:437:25
 action#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK
-ADDED from AndroidManifest.xml:438:17
+ADDED from AndroidManifest.xml:439:17
 	android:name
-		ADDED from AndroidManifest.xml:438:25
+		ADDED from AndroidManifest.xml:439:25
 receiver#com.clock.service.NetCheckReceiver
-ADDED from AndroidManifest.xml:445:9
+ADDED from AndroidManifest.xml:446:9
 	android:name
-		ADDED from AndroidManifest.xml:445:19
+		ADDED from AndroidManifest.xml:446:19
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from AndroidManifest.xml:446:13
+ADDED from AndroidManifest.xml:447:13
 receiver#com.yktx.listwidget.ListWidgetProvider
-ADDED from AndroidManifest.xml:452:9
+ADDED from AndroidManifest.xml:453:9
 	android:name
-		ADDED from AndroidManifest.xml:452:19
+		ADDED from AndroidManifest.xml:453:19
 intent-filter#android.appwidget.action.APPWIDGET_UPDATE+com.android.REFLASH
-ADDED from AndroidManifest.xml:453:13
+ADDED from AndroidManifest.xml:454:13
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from AndroidManifest.xml:454:17
-	android:name
-		ADDED from AndroidManifest.xml:454:25
-action#com.android.REFLASH
 ADDED from AndroidManifest.xml:455:17
 	android:name
 		ADDED from AndroidManifest.xml:455:25
+action#com.android.REFLASH
+ADDED from AndroidManifest.xml:456:17
+	android:name
+		ADDED from AndroidManifest.xml:456:25
 meta-data#android.appwidget.provider
-ADDED from AndroidManifest.xml:458:13
+ADDED from AndroidManifest.xml:459:13
 	android:resource
+		ADDED from AndroidManifest.xml:461:17
+	android:name
 		ADDED from AndroidManifest.xml:460:17
-	android:name
-		ADDED from AndroidManifest.xml:459:17
 service#com.yktx.listwidget.ListWidgetService
-ADDED from AndroidManifest.xml:463:9
+ADDED from AndroidManifest.xml:464:9
 	android:exported
-		ADDED from AndroidManifest.xml:465:13
-	android:permission
 		ADDED from AndroidManifest.xml:466:13
+	android:permission
+		ADDED from AndroidManifest.xml:467:13
 	android:name
-		ADDED from AndroidManifest.xml:464:13
+		ADDED from AndroidManifest.xml:465:13
 service#com.yktx.listwidget.ListWidgetProvider$MyService
-ADDED from AndroidManifest.xml:467:9
+ADDED from AndroidManifest.xml:468:9
 	android:name
-		ADDED from AndroidManifest.xml:467:18
+		ADDED from AndroidManifest.xml:468:18
 service#com.baidu.location.f
-ADDED from AndroidManifest.xml:472:9
-	android:enabled
-		ADDED from AndroidManifest.xml:474:13
+ADDED from AndroidManifest.xml:473:9
 	android:process
+		ADDED from AndroidManifest.xml:476:13
+	android:enabled
 		ADDED from AndroidManifest.xml:475:13
 	android:name
-		ADDED from AndroidManifest.xml:473:13
+		ADDED from AndroidManifest.xml:474:13
 meta-data#BDAPPID
-ADDED from AndroidManifest.xml:478:9
-	android:value
+ADDED from AndroidManifest.xml:479:9
+	android:name
 		ADDED from AndroidManifest.xml:480:13
-	android:name
-		ADDED from AndroidManifest.xml:479:13
+	android:value
+		ADDED from AndroidManifest.xml:481:13
 meta-data#BDAPPKEY
-ADDED from AndroidManifest.xml:481:9
-	android:value
+ADDED from AndroidManifest.xml:482:9
+	android:name
 		ADDED from AndroidManifest.xml:483:13
-	android:name
-		ADDED from AndroidManifest.xml:482:13
+	android:value
+		ADDED from AndroidManifest.xml:484:13
 meta-data#JPUSH_CHANNEL
-ADDED from AndroidManifest.xml:492:9
-	android:value
+ADDED from AndroidManifest.xml:493:9
+	android:name
 		ADDED from AndroidManifest.xml:494:13
-	android:name
-		ADDED from AndroidManifest.xml:493:13
+	android:value
+		ADDED from AndroidManifest.xml:495:13
 meta-data#JPUSH_APPKEY
-ADDED from AndroidManifest.xml:496:9
-	android:value
+ADDED from AndroidManifest.xml:497:9
+	android:name
 		ADDED from AndroidManifest.xml:498:13
-	android:name
-		ADDED from AndroidManifest.xml:497:13
+	android:value
+		ADDED from AndroidManifest.xml:499:13
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from AndroidManifest.xml:499:9
-	android:value
+ADDED from AndroidManifest.xml:500:9
+	android:name
 		ADDED from AndroidManifest.xml:501:13
-	android:name
-		ADDED from AndroidManifest.xml:500:13
+	android:value
+		ADDED from AndroidManifest.xml:502:13
 meta-data#UMENG_APPKEY
-ADDED from AndroidManifest.xml:504:9
-	android:value
+ADDED from AndroidManifest.xml:505:9
+	android:name
 		ADDED from AndroidManifest.xml:506:13
-	android:name
-		ADDED from AndroidManifest.xml:505:13
-meta-data#UMENG_CHANNEL
-ADDED from AndroidManifest.xml:512:9
 	android:value
+		ADDED from AndroidManifest.xml:507:13
+meta-data#UMENG_CHANNEL
+ADDED from AndroidManifest.xml:513:9
+	android:name
 		ADDED from AndroidManifest.xml:514:13
-	android:name
-		ADDED from AndroidManifest.xml:513:13
+	android:value
+		ADDED from AndroidManifest.xml:515:13
 activity#com.yktx.check.ClockGroupInfoFragmentActivity
-ADDED from AndroidManifest.xml:516:9
+ADDED from AndroidManifest.xml:517:9
 	android:label
+		ADDED from AndroidManifest.xml:519:13
+	android:name
 		ADDED from AndroidManifest.xml:518:13
-	android:name
-		ADDED from AndroidManifest.xml:517:13
 uses-permission#android.permission.GET_TASKS
-ADDED from AndroidManifest.xml:522:5
-	android:name
-		ADDED from AndroidManifest.xml:522:22
-uses-permission#android.permission.REORDER_TASKS
 ADDED from AndroidManifest.xml:523:5
 	android:name
 		ADDED from AndroidManifest.xml:523:22
-uses-permission#com.yktx.group.permission.JPUSH_MESSAGE
+uses-permission#android.permission.REORDER_TASKS
 ADDED from AndroidManifest.xml:524:5
 	android:name
 		ADDED from AndroidManifest.xml:524:22
-uses-permission#android.permission.RECEIVE_USER_PRESENT
+uses-permission#com.yktx.group.permission.JPUSH_MESSAGE
 ADDED from AndroidManifest.xml:525:5
 	android:name
 		ADDED from AndroidManifest.xml:525:22
-uses-permission#android.permission.WAKE_LOCK
+uses-permission#android.permission.RECEIVE_USER_PRESENT
 ADDED from AndroidManifest.xml:526:5
 	android:name
 		ADDED from AndroidManifest.xml:526:22
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
+uses-permission#android.permission.WAKE_LOCK
 ADDED from AndroidManifest.xml:527:5
 	android:name
 		ADDED from AndroidManifest.xml:527:22
-uses-permission#android.permission.VIBRATE
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:528:5
 	android:name
 		ADDED from AndroidManifest.xml:528:22
-uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+uses-permission#android.permission.VIBRATE
 ADDED from AndroidManifest.xml:529:5
 	android:name
 		ADDED from AndroidManifest.xml:529:22
-uses-permission#android.permission.ACCESS_NETWORK_STATE
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
 ADDED from AndroidManifest.xml:530:5
 	android:name
 		ADDED from AndroidManifest.xml:530:22
-uses-permission#android.permission.READ_CONTACTS
+uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from AndroidManifest.xml:531:5
 	android:name
 		ADDED from AndroidManifest.xml:531:22
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from AndroidManifest.xml:533:5
+uses-permission#android.permission.READ_CONTACTS
+ADDED from AndroidManifest.xml:532:5
 	android:name
-		ADDED from AndroidManifest.xml:533:22
-uses-permission#android.permission.ACCESS_COARSE_UPDATES
+		ADDED from AndroidManifest.xml:532:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from AndroidManifest.xml:534:5
 	android:name
 		ADDED from AndroidManifest.xml:534:22
-uses-permission#android.permission.ACCESS_WIFI_STATE
+uses-permission#android.permission.ACCESS_COARSE_UPDATES
 ADDED from AndroidManifest.xml:535:5
 	android:name
 		ADDED from AndroidManifest.xml:535:22
-uses-permission#android.permission.CHANGE_WIFI_STATE
+uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from AndroidManifest.xml:536:5
 	android:name
 		ADDED from AndroidManifest.xml:536:22
-uses-permission#android.permission.ACCESS_FINE_LOCATION
+uses-permission#android.permission.CHANGE_WIFI_STATE
 ADDED from AndroidManifest.xml:537:5
 	android:name
 		ADDED from AndroidManifest.xml:537:22
-uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from AndroidManifest.xml:538:5
 	android:name
 		ADDED from AndroidManifest.xml:538:22
-uses-permission#android.permission.CHANGE_NETWORK_STATE
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
 ADDED from AndroidManifest.xml:539:5
 	android:name
 		ADDED from AndroidManifest.xml:539:22
-uses-permission#android.permission.CAMERA
+uses-permission#android.permission.CHANGE_NETWORK_STATE
 ADDED from AndroidManifest.xml:540:5
 	android:name
 		ADDED from AndroidManifest.xml:540:22
-uses-feature#android.hardware.camera
-ADDED from AndroidManifest.xml:542:5
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:541:5
 	android:name
-		ADDED from AndroidManifest.xml:542:19
-uses-feature#android.hardware.camera.autofocus
+		ADDED from AndroidManifest.xml:541:22
+uses-feature#android.hardware.camera
 ADDED from AndroidManifest.xml:543:5
 	android:name
 		ADDED from AndroidManifest.xml:543:19
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:545:5
+uses-feature#android.hardware.camera.autofocus
+ADDED from AndroidManifest.xml:544:5
 	android:name
-		ADDED from AndroidManifest.xml:545:22
-uses-permission#android.permission.INTERNET
+		ADDED from AndroidManifest.xml:544:19
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:546:5
 	android:name
 		ADDED from AndroidManifest.xml:546:22
-uses-permission#android.permission.READ_PHONE_STATE
+uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:547:5
 	android:name
 		ADDED from AndroidManifest.xml:547:22
-uses-permission#android.permission.READ_LOGS
+uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:548:5
 	android:name
 		ADDED from AndroidManifest.xml:548:22
-uses-permission#android.permission.RECORD_AUDIO
+uses-permission#android.permission.READ_LOGS
 ADDED from AndroidManifest.xml:549:5
 	android:name
 		ADDED from AndroidManifest.xml:549:22
-uses-permission#android.permission.WRITE_CONTACTS
-ADDED from AndroidManifest.xml:551:5
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:550:5
 	android:name
-		ADDED from AndroidManifest.xml:551:22
-uses-permission#android.permission.WRITE_SETTINGS
+		ADDED from AndroidManifest.xml:550:22
+uses-permission#android.permission.WRITE_CONTACTS
 ADDED from AndroidManifest.xml:552:5
 	android:name
 		ADDED from AndroidManifest.xml:552:22
-uses-permission#android.permission.BAIDU_LOCATION_SERVICE
+uses-permission#android.permission.WRITE_SETTINGS
 ADDED from AndroidManifest.xml:553:5
 	android:name
 		ADDED from AndroidManifest.xml:553:22
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from AndroidManifest.xml:555:5
+uses-permission#android.permission.BAIDU_LOCATION_SERVICE
+ADDED from AndroidManifest.xml:554:5
 	android:name
-		ADDED from AndroidManifest.xml:555:22
-uses-permission#android.permission.USE_CREDENTIALS
+		ADDED from AndroidManifest.xml:554:22
+uses-permission#android.permission.GET_ACCOUNTS
 ADDED from AndroidManifest.xml:556:5
 	android:name
 		ADDED from AndroidManifest.xml:556:22
-uses-permission#android.permission.MANAGE_ACCOUNTS
+uses-permission#android.permission.USE_CREDENTIALS
 ADDED from AndroidManifest.xml:557:5
 	android:name
 		ADDED from AndroidManifest.xml:557:22
-uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+uses-permission#android.permission.MANAGE_ACCOUNTS
 ADDED from AndroidManifest.xml:558:5
 	android:name
 		ADDED from AndroidManifest.xml:558:22
-uses-permission#com.android.launcher.permission.READ_SETTINGS
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
 ADDED from AndroidManifest.xml:559:5
 	android:name
 		ADDED from AndroidManifest.xml:559:22
-uses-permission#android.permission.BROADCAST_STICKY
+uses-permission#com.android.launcher.permission.READ_SETTINGS
 ADDED from AndroidManifest.xml:560:5
 	android:name
 		ADDED from AndroidManifest.xml:560:22
-uses-permission#com.yktx.check.permission.JPUSH_MESSAGE
-ADDED from AndroidManifest.xml:563:5
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from AndroidManifest.xml:561:5
 	android:name
-		ADDED from AndroidManifest.xml:563:22
-uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+		ADDED from AndroidManifest.xml:561:22
+uses-permission#com.yktx.check.permission.JPUSH_MESSAGE
 ADDED from AndroidManifest.xml:564:5
 	android:name
 		ADDED from AndroidManifest.xml:564:22
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from AndroidManifest.xml:565:5
+	android:name
+		ADDED from AndroidManifest.xml:565:22

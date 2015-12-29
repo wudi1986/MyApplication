@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/values-ja/umeng_fb_strings.xml -->
+    <!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/values-ja/umeng_fb_strings.xml -->
     <eat-comment/>
     <string name="umeng_fb_back">戻る</string>
     <string name="umeng_fb_contact_info">連絡</string>

@@ -14,4 +14,4 @@
      <alpha android:fromAlpha="1.0" android:toAlpha="0"   
            android:duration="400"/>  
 
-</set><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/anim/zoomout.xml -->
+</set><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/anim/zoomout.xml -->

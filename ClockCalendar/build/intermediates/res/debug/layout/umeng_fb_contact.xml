@@ -17,4 +17,4 @@
         android:contentDescription="@string/umeng_fb_contact_info"
         android:src="@drawable/umeng_fb_arrow_right" />
 </RelativeLayout>
-<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/layout/umeng_fb_contact.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/layout/umeng_fb_contact.xml -->

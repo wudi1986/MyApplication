@@ -2,7 +2,7 @@ apply plugin: 'android'
 
 dependencies {
     //    compile fileTree(dir: 'libs', include: ['**.*'])
-    compile fileTree(include: '**.*', dir: 'libs')
+    compile fileTree(dir: 'libs', include: '**.*')
     compile project(':XCL-Charts')
     compile project(':BAnim_v7Library')
     compile project(':BAnim_ListViewLibrary')
@@ -15,13 +15,13 @@ android {
         config {
             keyAlias 'yktxshangou'
             keyPassword 'yktx2013'
-            storeFile file('C:/yktxkey')
+            storeFile file('C:/Users/Administrator/Desktop/yktxkey')
             storePassword 'yktx2013'
         }
         config1 {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
-            storeFile file('C:/debug.keystore')
+            storeFile file('C:/Users/Administrator/Desktop/debug.keystore')
             storePassword 'android'
         }
     }

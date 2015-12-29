@@ -8,4 +8,4 @@
 	<item android:state_focused="true"
 		  android:drawable="@drawable/umeng_update_close_bg_tap" />
 </selector>
-<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/umeng_update_button_close_bg_selector.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/umeng_update_button_close_bg_selector.xml -->

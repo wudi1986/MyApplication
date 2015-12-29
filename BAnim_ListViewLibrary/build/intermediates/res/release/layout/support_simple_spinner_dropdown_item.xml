@@ -22,4 +22,4 @@
           android:singleLine="true"
           android:layout_width="match_parent"
           android:layout_height="?attr/dropdownListPreferredItemHeight"
-          android:ellipsize="marquee"/><!-- From: file:/C:/android%20test/MyApplication/BAnim_v7Library/res/layout/support_simple_spinner_dropdown_item.xml --><!-- From: file:/C:/android%20test/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/layout/support_simple_spinner_dropdown_item.xml -->
+          android:ellipsize="marquee"/><!-- From: file:/D:/AndroidStudioProject/MyApplication/BAnim_v7Library/res/layout/support_simple_spinner_dropdown_item.xml --><!-- From: file:/D:/AndroidStudioProject/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/layout/support_simple_spinner_dropdown_item.xml -->

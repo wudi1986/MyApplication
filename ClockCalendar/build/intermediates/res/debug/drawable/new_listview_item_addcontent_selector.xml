@@ -4,4 +4,4 @@
     <item android:state_pressed="false" android:drawable="@drawable/xinjian_tuijian_tianjia"></item>
 
 </selector>
-<!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/res/drawable/new_listview_item_addcontent_selector.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/res/drawable/new_listview_item_addcontent_selector.xml -->

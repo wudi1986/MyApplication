@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/android%20test/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProject/MyApplication/BAnim_ListViewLibrary/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="actionBarDivider"/>
     <attr format="reference" name="actionBarItemBackground"/>

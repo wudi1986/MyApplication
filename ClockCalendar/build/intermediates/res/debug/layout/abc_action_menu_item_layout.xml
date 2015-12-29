@@ -28,4 +28,4 @@
         android:textAppearance="?attr/actionMenuTextAppearance"
         android:textColor="?attr/actionMenuTextColor"
         style="?attr/actionButtonStyle"/>
-<!-- From: file:/C:/android%20test/MyApplication/BAnim_v7Library/res/layout/abc_action_menu_item_layout.xml --><!-- From: file:/C:/android%20test/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/layout/abc_action_menu_item_layout.xml -->
+<!-- From: file:/D:/AndroidStudioProject/MyApplication/BAnim_v7Library/res/layout/abc_action_menu_item_layout.xml --><!-- From: file:/D:/AndroidStudioProject/MyApplication/ClockCalendar/build/intermediates/exploded-aar/MyApplication/BAnim_v7Library/unspecified/res/layout/abc_action_menu_item_layout.xml -->
